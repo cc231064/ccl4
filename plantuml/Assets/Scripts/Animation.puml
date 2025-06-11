@@ -1,0 +1,12 @@
+@startuml
+class Animation {
+    + Crunch(vector:Vector3) : Tween
+    + DoAnimation(anim:Tween) : void
+    + HoverHighlight() : Tween
+    + HoverDeHighlight() : Tween
+    + SelectedHighlight() : Tween
+    + SelectedDeHighlight() : Tween
+}
+MonoBehaviour <|-- Animation
+Animation --> "positionOriginal" Vector3
+@enduml

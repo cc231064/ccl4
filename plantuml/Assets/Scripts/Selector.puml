@@ -1,0 +1,10 @@
+@startuml
+class Selector {
+    + isSelected : bool
+    + isHover : bool
+    + Deselect() : void
+}
+MonoBehaviour <|-- Selector
+Selector --> "Animate" Animation
+Selector --> "Instantiator" Spawner
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class Snapper {
+}
+MonoBehaviour <|-- Snapper
+Snapper o-> "SnapDistance" Vector3
+Snapper --> "SnapOffset" Vector3
+Snapper --> "SnappedCoord" Vector3
+@enduml
