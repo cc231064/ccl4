@@ -1,6 +1,6 @@
-#**Tectonic Pets**#
+**Tectonic Pets**
 
-#Storyline#: Blorbo is taking care of her animals by changing tectonic plates. You are helping Blorbo in achieving her Goal by adding animals onto the planet and changing Biomes.   
+Storyline: Blorbo is taking care of her animals by changing tectonic plates. You are helping Blorbo in achieving her Goal by adding animals onto the planet and changing Biomes.   
 
 Features: The Player takes the animals, biomes and trees out of their inventory and adds them to the planet. 
 
