@@ -19,3 +19,9 @@ Animation.cs stores all the animations and a copy of all the data needed for sai
 Controller.cs and Techtonic Controller.cs both work togther to take user input (keyboard) and manipulate the plates to (in the future) make geologic features.
 
 ![plates](https://github.com/user-attachments/assets/9a0d1ab8-dca9-4e82-a831-27290abf9fab)
+![foxwolf](https://github.com/user-attachments/assets/60c14957-d651-4fe3-a0d5-a62397e56418)
+![cow](https://github.com/user-attachments/assets/53bb8606-27b1-4cb4-9dd4-f1c47c7bd1a2)
+![chicken](https://github.com/user-attachments/assets/73637039-4c0c-4afd-8ce4-5f6d7ef30396)
+![blorbo](https://github.com/user-attachments/assets/02254768-1aea-4aa3-8550-98fec0eab9d1)
+![sheep](https://github.com/user-attachments/assets/1fb78504-b40e-4468-999c-90cbecadeca8)
+![goat](https://github.com/user-attachments/assets/d325c4be-07f0-4e24-95d5-6e67caadd7a0)
