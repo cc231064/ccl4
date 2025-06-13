@@ -17,3 +17,5 @@ PlateData.cs handels the data needed for collisions (not implemented yet)
 Selector.cs handles the selector system (this is currently just the mouse)
 Animation.cs stores all the animations and a copy of all the data needed for said animation.
 Controller.cs and Techtonic Controller.cs both work togther to take user input (keyboard) and manipulate the plates to (in the future) make geologic features.
+
+![plates](https://github.com/user-attachments/assets/9a0d1ab8-dca9-4e82-a831-27290abf9fab)
