@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 955977153528068908}
   - component: {fileID: 935718658124276392}
   - component: {fileID: 6654421947972810173}
-  - component: {fileID: 6538462914743767143}
   - component: {fileID: -4024897266645961440}
-  m_Layer: 0
+  - component: {fileID: -5438082185350592784}
+  m_Layer: 3
   m_Name: Vertex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,21 +110,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6538462914743767143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249955142173181764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 739215ba1cb048d4a82cb9d7784a327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SnapDistance: {x: 3, y: 1, z: 3}
-  SnapOffset: {x: 1.5, y: 0, z: 1.5}
-  SnappedCoord: {x: 0, y: 0, z: 0}
 --- !u!114 &-4024897266645961440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,3 +122,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3f779c850cbc14a9be295496f351b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionOriginal: {x: 0, y: 0, z: 0}
+--- !u!114 &-5438082185350592784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249955142173181764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987546ef7095f1b49be29e0ac5bbdd07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlateType: Land
+  SnapDistance: {x: 3, y: 1, z: 3}
+  SnapOffset: {x: 1.5, y: 0, z: 1.5}
+  SnappedCoord: {x: 0, y: 0, z: 0}
+  techtonicsController: {fileID: 0}
+  Tree: {fileID: 1478496334729849683, guid: d9292333100f87844a7d5f9c750025af, type: 3}

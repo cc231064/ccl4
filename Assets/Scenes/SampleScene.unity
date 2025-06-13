@@ -253,9 +253,11 @@ GameObject:
   - component: {fileID: 413770986}
   - component: {fileID: 413770985}
   - component: {fileID: 413770987}
+  - component: {fileID: 413770991}
   - component: {fileID: 413770988}
   - component: {fileID: 413770989}
   - component: {fileID: 413770990}
+  - component: {fileID: 413770992}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -275,11 +277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed28a208f88bb94f9925a1a3066bef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Size: {x: 6, y: 6}
-  Plate1: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
-  Vert1: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
-  EdgeX1: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
-  EdgeY1: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
 --- !u!4 &413770984
 Transform:
   m_ObjectHideFlags: 0
@@ -444,6 +441,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Selected: {fileID: 0}
+  NorthOfSelected: {fileID: 0}
+  SouthOfSelected: {fileID: 0}
+  EastOfSelected: {fileID: 0}
+  WestOfSelected: {fileID: 0}
+--- !u!114 &413770991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413770982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f54faa95f745e24dbe3152ed21bc118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Size: {x: 3, y: 3}
+  PlateLand: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertLand: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXLand: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYLand: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+  PlateOcean: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertOcean: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXOcean: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYOcean: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+  PlateIsland: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertIsland: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXIsland: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYIsland: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+--- !u!114 &413770992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413770982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385c82e7f7bdaf947846a946c428c873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,9 +14,19 @@ public class Selector : MonoBehaviour
         Animate = GetComponent<Animation>();
         isSelected = false;
         isHover = false;
-    }
 
-    void OnMouseOver()
+        // Auto-assign forwarders to children with colliders
+        foreach (Collider col in GetComponentsInChildren<Collider>())
+        {
+            if (col.gameObject != gameObject)
+            {
+                MouseEventForwarder forwarder = col.gameObject.AddComponent<MouseEventForwarder>();
+                forwarder.parentSelector = this;
+            }
+        }
+    }
+    
+    public void OnMouseOver()
     {
         if (!isHover)
         {
@@ -25,7 +35,7 @@ public class Selector : MonoBehaviour
         }
     }
 
-    void OnMouseExit()
+    public void OnMouseExit()
     {
         if (!isSelected)
         {
@@ -34,7 +44,7 @@ public class Selector : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         if (!isSelected)
         {

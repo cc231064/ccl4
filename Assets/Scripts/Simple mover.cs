@@ -1,16 +1,16 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Snapper))]
+[RequireComponent(typeof(PlateData))]
 public class Simplemover : MonoBehaviour
 {
     [SerializeField] Vector3 Move;
 
-    Snapper sp;
+    PlateData sp;
     [SerializeField] float Timer;
 
     void Start()
     {
-        sp = GetComponent<Snapper>();
+        sp = GetComponent<PlateData>();
     }
 
     void Update()

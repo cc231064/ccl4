@@ -2,17 +2,14 @@ using UnityEngine;
 using DG.Tweening;
 using Unity.Mathematics;
 using System.Collections;
-using System;
 
 public class Animation : MonoBehaviour
 {
-    Snapper snap;
     private Tween currentTween;
     private Vector3 scaleOriginal;
     public Vector3 positionOriginal;
     private void Awake()
     {
-        snap = GetComponent<Snapper>();
         scaleOriginal = transform.localScale;
     }
 
