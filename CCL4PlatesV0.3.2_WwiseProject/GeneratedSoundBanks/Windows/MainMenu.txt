@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	21544190	OnClick			\Default Work Unit\OnClick	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	803899509	button	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\F2\{F21CDAA2-6D22-2746-4E19-D980C0C9F814}.wem		\Actor-Mixer Hierarchy\Default Work Unit\button		123576
+

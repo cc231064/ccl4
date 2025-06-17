@@ -1,17 +1,22 @@
 using UnityEngine;
+using AK.Wwise;
 
 public class PlateData : MonoBehaviour
 {
+    
     public string PlateType;
     public Vector3 SnapDistance = new Vector3(1, 1, 1);
     public Vector3 SnapOffset;
     public Vector3 SnappedCoord;
     public TechtonicsController techtonicsController;
 
+    private string AKEventButton = "Mountain";
+
     private GameObject[] Foliage;
     [SerializeField] GameObject? Tree;
     void Start()
     {
+        gameObject.AddComponent<AkGameObj>();
         SnappedCoord = transform.position;
         techtonicsController = GetComponent<TechtonicsController>();
         Foliage = new GameObject[(int)(transform.localScale.x * transform.localScale.y)*20];
@@ -48,6 +53,7 @@ public class PlateData : MonoBehaviour
                 Debug.Log("Become Mountain");
                 transform.localScale += new Vector3(0, 1, 0);
                 PlateType = "Mountain";
+                AkSoundEngine.PostEvent(AKEventButton, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")

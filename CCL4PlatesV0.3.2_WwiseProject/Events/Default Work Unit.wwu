@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="OnClick" ID="{E0D5E85E-CCDC-4AE4-8467-80200A649057}">
+					<ChildrenList>
+						<Action Name="" ID="{4274791E-A2D9-498C-8DEE-B4678F316BB0}" ShortID="573921749">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="button" ID="{0488FB79-9AF3-4C57-99C8-B0574FFF2EA3}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mountain" ID="{23AFDBEB-48C4-4D50-8BCF-A8B8798DC3FE}">
+					<ChildrenList>
+						<Action Name="" ID="{3E037042-0459-47AF-9AF0-0903EE5D5D79}" ShortID="90435851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mountain" ID="{44282345-E448-42F6-8886-44F4FE6CF256}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic" ID="{C3E0121B-43AC-42E5-A4B0-15AB04EEBDFE}">
+					<ChildrenList>
+						<Action Name="" ID="{57039CCF-088E-4146-ADCC-BDF3ADA2FFDD}" ShortID="220744123">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambient-space2" ID="{20EA8539-D7A0-466F-A9D2-50A951BD05F1}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BackgroundMusic" ID="{2D8AB2C0-4CD8-413E-93CC-FBDF2820F7AD}">
+					<ChildrenList>
+						<Action Name="" ID="{3CFD3000-ADF4-4097-8C9B-DE5FCADA3FF8}" ShortID="501999542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="chillout-space" ID="{B58CECF1-4A3C-4EC1-BE47-CF2D14BD2584}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

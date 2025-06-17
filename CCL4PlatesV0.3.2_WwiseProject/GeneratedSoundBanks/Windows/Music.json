@@ -1,0 +1,65 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{4675B2E4-94DA-4FE6-9DDA-B81CCAEB2793}",
+    "Language": "SFX",
+    "Hash": "{2FFB987D-25AF-0DD4-9D53-288B9EF86772}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "147069584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chillout-space.wav",
+      "CachePath": "9F/{9F42A0A7-B821-DAE7-1885-D36D762D78C5}.wem"
+     },
+     {
+      "Id": "1000525389",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambient-space2.wav",
+      "CachePath": "E8/{E8F11246-FEFC-8091-7C29-18C5E4E1870B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "626769978",
+      "Name": "BackgroundMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\BackgroundMusic",
+      "GUID": "{2D8AB2C0-4CD8-413E-93CC-FBDF2820F7AD}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "147069584"
+       }
+      ]
+     },
+     {
+      "Id": "679636833",
+      "Name": "MenuMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\MenuMusic",
+      "GUID": "{C3E0121B-43AC-42E5-A4B0-15AB04EEBDFE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1000525389"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A99BFEBE-7478-B90F-244C-0EB43CF58C17}"
+ }
+}

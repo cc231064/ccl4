@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	626769978	BackgroundMusic			\Default Work Unit\BackgroundMusic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\music	
+
+State	ID	Name	State Group			Notes
+	702482391	game	music			
+	748895195	None	music			
+	2607556080	menu	music			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	147069584	chillout-space	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\9F\{9F42A0A7-B821-DAE7-1885-D36D762D78C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\chillout-space		16581696
+

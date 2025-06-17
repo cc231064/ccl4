@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3604647259",
+    "Type": "User",
+    "GUID": "{BA4449FF-EB6B-482E-9152-F7F4ECD75FE2}",
+    "Language": "SFX",
+    "Hash": "{2D67A479-836F-581C-E8CF-2177C10CF73A}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainMenu",
+    "ShortName": "MainMenu",
+    "Path": "MainMenu.bnk",
+    "Media": [
+     {
+      "Id": "803899509",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "button.wav",
+      "CachePath": "F2/{F21CDAA2-6D22-2746-4E19-D980C0C9F814}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "21544190",
+      "Name": "OnClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\OnClick",
+      "GUID": "{E0D5E85E-CCDC-4AE4-8467-80200A649057}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7",
+      "DurationMax": "0.7",
+      "MediaRefs": [
+       {
+        "Id": "803899509"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D605FD8B-91E5-C1F2-713F-AE994B52D894}"
+ }
+}

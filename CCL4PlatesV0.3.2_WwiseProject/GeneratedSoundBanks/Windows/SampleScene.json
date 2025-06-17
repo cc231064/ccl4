@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3850870201",
+    "Type": "User",
+    "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
+    "Language": "SFX",
+    "Hash": "{BB15C2AA-E1CD-D51B-266E-ED9DCC58FF1F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
+    "ShortName": "SampleScene",
+    "Path": "SampleScene.bnk",
+    "Media": [
+     {
+      "Id": "720192106",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mountain.wav",
+      "CachePath": "58/{58C2AD92-C83B-3DFF-C427-5CE477256B61}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "513139656",
+      "Name": "Mountain",
+      "ObjectPath": "\\Events\\Default Work Unit\\Mountain",
+      "GUID": "{23AFDBEB-48C4-4D50-8BCF-A8B8798DC3FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.23",
+      "DurationMax": "1.23",
+      "MediaRefs": [
+       {
+        "Id": "720192106"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{198D3940-4C7F-E7CC-02C2-972AED80FE59}"
+ }
+}
