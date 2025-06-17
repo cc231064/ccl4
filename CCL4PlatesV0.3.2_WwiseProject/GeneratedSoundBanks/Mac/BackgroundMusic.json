@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "626769978",
+    "Type": "User",
+    "GUID": "{EF359BD5-0145-4E33-9A23-8D824140A1C7}",
+    "Language": "SFX",
+    "Hash": "{7F3182F0-5316-8D0F-B90C-D640DAFE3A3C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\BackgroundMusic",
+    "ShortName": "BackgroundMusic",
+    "Path": "BackgroundMusic.bnk",
+    "Media": [
+     {
+      "Id": "147069584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chillout-space.wav",
+      "CachePath": "9F/{9F42A0A7-B821-DAE7-1885-D36D762D78C5}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "626769978",
+      "Name": "BackgroundMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\BackgroundMusic",
+      "GUID": "{2D8AB2C0-4CD8-413E-93CC-FBDF2820F7AD}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "147069584"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3C7A3AC6-323E-B250-F2C9-F462C94B06C3}"
+ }
+}

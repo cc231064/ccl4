@@ -1,6 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="button" ID="{0488FB79-9AF3-4C57-99C8-B0574FFF2EA3}" ShortID="715732301">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="button" ID="{7B8CD6BF-3A0E-43A9-BE1A-150D3816C76F}">
+							<Language>SFX</Language>
+							<AudioFile>button.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="803899509"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="button" ID="{7B8CD6BF-3A0E-43A9-BE1A-150D3816C76F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="mountain" ID="{44282345-E448-42F6-8886-44F4FE6CF256}" ShortID="276007563">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="mountain" ID="{CD8A8A3C-445F-44D5-B8BE-FE0EE217EC3D}">
+							<Language>SFX</Language>
+							<AudioFile>mountain.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="720192106"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="mountain" ID="{CD8A8A3C-445F-44D5-B8BE-FE0EE217EC3D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ambient-space2" ID="{20EA8539-D7A0-466F-A9D2-50A951BD05F1}" ShortID="475144716">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ambient-space2" ID="{74FCD76B-B373-4FF9-BB43-4442332EE602}">
+							<Language>SFX</Language>
+							<AudioFile>ambient-space2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1000525389"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="music" ID="{B9932808-E606-4434-A16F-DA3FFF21A61E}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="menu" ID="{5BDD939A-BEA7-4077-9AB2-CE91AC32BEF3}"/>
+								<CustomState Name="" ID="{524FD21F-C77B-4045-9A69-48802EEDCDC9}" ShortID="836285265"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="game" ID="{FE63071F-1C58-420D-BC55-9418B75DD78E}"/>
+								<CustomState Name="" ID="{331CBC07-6F20-4275-B5D9-A0AE5307C1F6}" ShortID="192326622">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="ambient-space2" ID="{74FCD76B-B373-4FF9-BB43-4442332EE602}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="chillout-space" ID="{B58CECF1-4A3C-4EC1-BE47-CF2D14BD2584}" ShortID="269847909">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="chillout-space" ID="{D7093E36-BCA8-4FF8-A594-65159CFE5CF9}">
+							<Language>SFX</Language>
+							<AudioFile>chillout-space.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="147069584"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="music" ID="{B9932808-E606-4434-A16F-DA3FFF21A61E}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="menu" ID="{5BDD939A-BEA7-4077-9AB2-CE91AC32BEF3}"/>
+								<CustomState Name="" ID="{2A95EADB-006E-43FC-9780-3152B428C013}" ShortID="832921001">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="game" ID="{FE63071F-1C58-420D-BC55-9418B75DD78E}"/>
+								<CustomState Name="" ID="{E858CB38-5046-4E8F-B0EC-0308B702F9BD}" ShortID="782536852"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="chillout-space" ID="{D7093E36-BCA8-4FF8-A594-65159CFE5CF9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

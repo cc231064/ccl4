@@ -1,0 +1,103 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{AE3D63C9-3990-3DD6-35EE-397D7D0CBEC6}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{7DE04573-E972-4BCF-B265-AF2900113F38}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{7D23E979-C1FE-4FD3-92F6-6B50D84EC8BC}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1973439780",
+      "Name": "music_01",
+      "ObjectPath": "\\States\\Default Work Unit\\music_01",
+      "GUID": "{A0E0B44E-0E66-4BF2-8777-5674F908D8B8}",
+      "States": [
+       {
+        "Id": "702482391",
+        "Name": "game",
+        "ObjectPath": "\\States\\Default Work Unit\\music_01\\game",
+        "GUID": "{230934B8-984F-4D8B-A01F-C6C166F36175}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\music_01\\None",
+        "GUID": "{9802EA85-1ED0-4FD3-8A6E-4451935C3BB8}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "menu",
+        "ObjectPath": "\\States\\Default Work Unit\\music_01\\menu",
+        "GUID": "{4062F91A-3644-4F49-92A3-6A368A6103A3}"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "music",
+      "ObjectPath": "\\States\\Default Work Unit\\music",
+      "GUID": "{B9932808-E606-4434-A16F-DA3FFF21A61E}",
+      "States": [
+       {
+        "Id": "702482391",
+        "Name": "game",
+        "ObjectPath": "\\States\\Default Work Unit\\music\\game",
+        "GUID": "{FE63071F-1C58-420D-BC55-9418B75DD78E}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\music\\None",
+        "GUID": "{F7E8FBCA-F36A-4B51-A788-675DFBF00873}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "menu",
+        "ObjectPath": "\\States\\Default Work Unit\\music\\menu",
+        "GUID": "{5BDD939A-BEA7-4077-9AB2-CE91AC32BEF3}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3A5E884E-613A-E37F-A812-37D845B1568D}"
+ }
+}
