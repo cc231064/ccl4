@@ -53,7 +53,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249955142173181764}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOriginal: {x: 0, y: 0, z: 0}
+  Spinning: 0
   wobbleKillTimer: 0
 --- !u!114 &-7823805220910673308
 MonoBehaviour:
@@ -161,6 +162,11 @@ MonoBehaviour:
   techtonicsController: {fileID: 0}
   Territory: 
   Tree: {fileID: 9170882793485818224, guid: d9292333100f87844a7d5f9c750025af, type: 3}
+  PlateLand: {fileID: 0}
+  PlateOcean: {fileID: 8039894601250523132, guid: e20c015afb948a649aa58247e481f0c8, type: 3}
+  PlateMountain: {fileID: 8039894601250523132, guid: 7b7c34eac432538488a11fb8b54d6fa5, type: 3}
+  PlateRift: {fileID: 0}
+  PlateVolcanoe: {fileID: 8039894601250523132, guid: a0c34a8d3d82efd40968cac109d33f52, type: 3}
 --- !u!114 &-7278557821467594503
 MonoBehaviour:
   m_ObjectHideFlags: 0

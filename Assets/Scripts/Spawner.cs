@@ -37,7 +37,8 @@ public class Spawner : MonoBehaviour
 
     void SetUpCam()
     {
-        cam.transform.position = new Vector3(-10, math.sqrt((spawnerData.Size.x * 1.5f * spawnerData.Size.x * 1.5f) + (spawnerData.Size.y * 1.5f * spawnerData.Size.y * 1.5f)) + 12.5f, -10);
+        cam.transform.position = new Vector3(-10, math.sqrt((spawnerData.Size.x * 1.5f * spawnerData.Size.x * 1.5f) + (spawnerData.Size.y * 1.5f * spawnerData.Size.y * 1.5f)) +
+        12.5f, -10);
         cam.transform.rotation = Quaternion.Euler(45, 45, 0);
 
         cam.orthographic = true;

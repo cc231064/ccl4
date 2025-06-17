@@ -468,10 +468,10 @@ MonoBehaviour:
   VertOcean: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
   EdgeXOcean: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
   EdgeYOcean: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
-  PlateIsland: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
-  VertIsland: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
-  EdgeXIsland: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
-  EdgeYIsland: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+  PlateMountain: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertMountain: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXMountain: {fileID: 431432378052121197, guid: fa2eac67ab9182e4e89b2c8a509f8977, type: 3}
+  EdgeYMountain: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
 --- !u!114 &413770992
 MonoBehaviour:
   m_ObjectHideFlags: 0

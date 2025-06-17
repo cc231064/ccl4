@@ -101,6 +101,14 @@ public class CreatureController : MonoBehaviour
                 if (Map[i, j].GetComponent<PlateData>().Territory == "Fox" || Map[i, j].GetComponent<PlateData>().Territory == "Fox Origin")
                 {
                     Map[i, j].GetComponent<TintController>().FadeStart(new Color(1, 0.5f, 0));
+                    foreach (Transform item in Map[i, j].GetComponentsInChildren<Transform>())
+                    {
+                        Debug.Log(item.GetComponent<TintController>());
+                        if (item.GetComponent<TintController>() != null)
+                        {
+                            item.GetComponent<TintController>().FadeStart(new Color(1, 0.5f, 0));
+                        }
+                    }
                     if (Map[i, j].GetComponent<AnimationLib>().wobbleKillTimer > 1) Map[i, j].GetComponent<AnimationLib>().DoAnimation(Map[i, j].GetComponent<AnimationLib>().Wobble());
                 }
 
@@ -121,6 +129,13 @@ public class CreatureController : MonoBehaviour
             for (int j = 0; j < Map.GetLength(1); j++)
             {
                 Map[i, j].GetComponent<TintController>().FadeEnd();
+                foreach (Transform item in Map[i, j].GetComponentsInChildren<Transform>())
+                    {
+                        if (item.GetComponent<TintController>() != null)
+                        {
+                            item.GetComponent<TintController>().FadeEnd();
+                        }
+                    }
             }
         }
     }

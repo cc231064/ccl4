@@ -8,31 +8,26 @@ public class PlateData : MonoBehaviour
     public Vector3 SnappedCoord;
     public TechtonicsController techtonicsController;
     [SerializeField] public string Territory; 
-
     private GameObject[] Foliage;
     [SerializeField] GameObject? Tree;
+
+    [SerializeField] GameObject PlateLand;
+    [SerializeField] GameObject PlateOcean;
+    [SerializeField] GameObject PlateMountain;
+    [SerializeField] GameObject PlateRift;
+    [SerializeField] GameObject PlateVolcanoe;
+
+    private GameObject PlateModel;
+
     void Start()
     {
         SnappedCoord = transform.position;
         techtonicsController = GetComponent<TechtonicsController>();
-        Foliage = new GameObject[100];
 
         UpdateSnap();
+        GenerateForest();
 
-        for (int i = 0; i < Foliage.Length; i++)
-        {
-            if (PlateType == "Land")
-            {
-                Foliage[i] = Instantiate(Tree, transform.position + new Vector3(Random.Range(-transform.localScale.x / 2, transform.localScale.x / 2), 1, Random.Range(-transform.localScale.z / 2, transform.localScale.z / 2)), Quaternion.LookRotation(new Vector3(0, 0, 1)));
-                for (int j = 0; j < i; j++)
-                {
-                    if ((Foliage[i].transform.position - Foliage[j].transform.position).magnitude < 0.3)
-                    {
-                        Destroy(Foliage[i]);
-                    }
-                }
-            }
-        }
+        UpdateLandType();
     }
 
     void UpdateSnap()
@@ -40,11 +35,63 @@ public class PlateData : MonoBehaviour
         transform.position = SnapOffset + new Vector3(SnappedCoord.x * SnapDistance.x, SnappedCoord.y * SnapDistance.y, SnappedCoord.z * SnapDistance.z);
     }
 
-    void BurnForest()
+    void RemoveForest()
     {
         for (int i = 0; i < Foliage.Length; i++)
         {
             Destroy(Foliage[i]);
+        }
+    }
+
+    void GenerateForest()
+    {
+        Foliage = new GameObject[100];
+        for (int i = 0; i < Foliage.Length; i++)
+        {
+            Foliage[i] = Instantiate(Tree, transform.position + new Vector3(Random.Range(-transform.localScale.x / 2, transform.localScale.x / 2), 1, Random.Range(-transform.localScale.z / 2, transform.localScale.z / 2)), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            for (int j = 0; j < i; j++)
+            {
+                if ((Foliage[i].transform.position - Foliage[j].transform.position).magnitude < 0.3)
+                {
+                    Destroy(Foliage[i]);
+                }
+            }
+        }
+    }
+
+    void UpdateLandType()
+    {
+        Destroy(PlateModel);
+        if (PlateType == "Mountain")
+        {
+            PlateModel = Instantiate(PlateMountain, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+            //GenerateForest();
+        }
+
+        if (PlateType == "Rift")
+        {
+            PlateModel = Instantiate(PlateRift, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+            //GenerateForest();
+        }
+
+        if (PlateType == "Ocean")
+        {
+            PlateModel = Instantiate(PlateOcean, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+            //GenerateForest();
+        }
+
+        if (PlateType == "Volcanoe")
+        {
+            PlateModel = Instantiate(PlateVolcanoe, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+            //GenerateForest();
         }
     }
 
@@ -55,14 +102,13 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Mountain");
-                transform.localScale += new Vector3(0, 1, 0);
                 PlateType = "Mountain";
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
             {
                 Debug.Log("Become Volcanoe");
-                BurnForest();
+                RemoveForest();
                 PlateType = "Volcanoe";
             }
         }
@@ -87,7 +133,7 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Major Volcanic landmass");
-                BurnForest();
+                RemoveForest();
                 PlateType = "Volcanoe";
             }
 
@@ -97,6 +143,8 @@ public class PlateData : MonoBehaviour
                 PlateType = "Ocean";
             }
         }
+
+        UpdateLandType();
     }
 
     public void PlateGraze(GameObject inputPlate)
@@ -145,6 +193,8 @@ public class PlateData : MonoBehaviour
                 Earthquake(0);
             }
         }
+
+        UpdateLandType();
     }
 
     public void PlateDiverge(GameObject inputPlate)
@@ -154,7 +204,6 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Rift");
-                transform.localScale += new Vector3(0, -0.5f, 0);
                 PlateType = "Rift";
             }
 
@@ -184,7 +233,7 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Exagerate the volcanic activity of the islands");
-                BurnForest();
+                RemoveForest();
                 PlateType = "Volcanoe";
             }
 
@@ -193,6 +242,8 @@ public class PlateData : MonoBehaviour
                 Debug.Log("Trigger Small Tsunami");
             }
         }
+
+        UpdateLandType();
     }
 
     public void Earthquake(int Power)
