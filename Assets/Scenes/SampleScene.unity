@@ -253,9 +253,11 @@ GameObject:
   - component: {fileID: 413770986}
   - component: {fileID: 413770985}
   - component: {fileID: 413770987}
+  - component: {fileID: 413770991}
   - component: {fileID: 413770988}
   - component: {fileID: 413770989}
   - component: {fileID: 413770990}
+  - component: {fileID: 413770992}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -275,11 +277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed28a208f88bb94f9925a1a3066bef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Size: {x: 6, y: 6}
-  Plate1: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
-  Vert1: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
-  EdgeX1: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
-  EdgeY1: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
 --- !u!4 &413770984
 Transform:
   m_ObjectHideFlags: 0
@@ -370,8 +367,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.01
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -415,6 +412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOriginal: {x: 0, y: 0, z: 0}
+  Spinning: 0
+  wobbleKillTimer: 0
 --- !u!114 &413770989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +443,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Selected: {fileID: 0}
+  NorthOfSelected: {fileID: 0}
+  SouthOfSelected: {fileID: 0}
+  EastOfSelected: {fileID: 0}
+  WestOfSelected: {fileID: 0}
+--- !u!114 &413770991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413770982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f54faa95f745e24dbe3152ed21bc118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Size: {x: 3, y: 3}
+  PlateLand: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertLand: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXLand: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYLand: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+  PlateOcean: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertOcean: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXOcean: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYOcean: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+  PlateIsland: {fileID: 1249955142173181764, guid: cbe7081eb2d2d744a90b318548050fde, type: 3}
+  VertIsland: {fileID: 1249955142173181764, guid: 5a3f3ea1fd74c944bb199ab56a4f863c, type: 3}
+  EdgeXIsland: {fileID: 1249955142173181764, guid: aabf33834e426614780ccf294030a1ec, type: 3}
+  EdgeYIsland: {fileID: 1249955142173181764, guid: 6a216a98bac001846ad4ba58cd8fd8b0, type: 3}
+--- !u!114 &413770992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413770982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385c82e7f7bdaf947846a946c428c873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fox: {fileID: 2032766498098618778, guid: 85a2a0d856eb0d5458d58f554273dafd, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +534,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1337856553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337856555}
+  - component: {fileID: 1337856554}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1337856554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337856553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f8fe0f05e54464ca7a96ac26a76e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 4462e3d4daf2e214fbd990095c805204, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1337856555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337856553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -500,3 +598,4 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 413770984}
+  - {fileID: 1337856555}

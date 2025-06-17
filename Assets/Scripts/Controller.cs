@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Spawner))]
-[RequireComponent(typeof(Animation))]
+[RequireComponent(typeof(AnimationLib))]
 [RequireComponent(typeof(Selector))]
 
 public class Controller : MonoBehaviour
@@ -10,6 +10,7 @@ public class Controller : MonoBehaviour
     KeyCode RDown = KeyCode.D;
     KeyCode LUp = KeyCode.W;
     KeyCode RUp = KeyCode.E;
+    KeyCode Select = KeyCode.S;
     Spawner spw;
     TechtonicsController tController;
 
@@ -29,25 +30,38 @@ public class Controller : MonoBehaviour
             if (Input.GetKeyDown(LDown))
             {
                 tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(-1, 0, 0)));
+                tController.DetermineCollide(new Vector3(-1, 0, 0));
                 timer = 0;
             }
 
             if (Input.GetKeyDown(RDown))
             {
                 tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(0, 0, -1)));
+                tController.DetermineCollide(new Vector3(0, 0, -1));
                 timer = 0;
             }
 
             if (Input.GetKeyDown(LUp))
             {
                 tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(0, 0, 1)));
+                tController.DetermineCollide(new Vector3(0, 0, 1));
                 timer = 0;
             }
 
             if (Input.GetKeyDown(RUp))
             {
                 tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(1, 0, 0)));
+                tController.DetermineCollide(new Vector3(1, 0, 0));
                 timer = 0;
+            }
+
+            if (Input.GetKeyDown(Select))
+            {
+                GetComponent<CreatureController>().ShowTerritory();
+            }
+            if (Input.GetKeyUp(Select))
+            {
+                GetComponent<CreatureController>().HideTerritory();
             }
         }
         timer += Time.deltaTime;
