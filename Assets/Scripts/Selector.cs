@@ -1,20 +1,17 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animation))]
+[RequireComponent(typeof(AnimationLib))]
 
 public class Selector : MonoBehaviour
 {
-    public Animation Animate;
+    public AnimationLib Animate;
     public Spawner Instantiator;
     public bool isSelected;
     public bool isHover;
 
-        private string AKEventButton = "Select";
-
     void Awake()
     {
-        gameObject.AddComponent<AkGameObj>();
-        Animate = GetComponent<Animation>();
+        Animate = GetComponent<AnimationLib>();
         isSelected = false;
         isHover = false;
 
@@ -55,7 +52,6 @@ public class Selector : MonoBehaviour
             isSelected = true;
             Animate.DoAnimation(Animate.SelectedHighlight());
             Instantiator.GetComponent<TechtonicsController>().Selected = gameObject;
-            AkSoundEngine.PostEvent(AKEventButton, gameObject);
         }
     }
 

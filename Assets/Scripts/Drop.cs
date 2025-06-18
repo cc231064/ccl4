@@ -19,13 +19,18 @@ public class Drop : MonoBehaviour
         {
             // Move to surface
             Vector3 newPosition = hit.point;
-            Quaternion surfaceRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            Quaternion surfaceRotation = transform.rotation;
 
-            transform.position = newPosition + new Vector3(0, transform.localScale.y/2, 0);
+            transform.position = newPosition + new Vector3(0, transform.localScale.y / 2, 0);
             transform.rotation = surfaceRotation;
 
             // Parent to the hit object
             transform.SetParent(hit.collider.transform);
+
+            if (GetComponent<AnimationLib>() != null)
+            {
+                GetComponent<AnimationLib>().positionOriginal = transform.position;
+            }
         }
         else
         {

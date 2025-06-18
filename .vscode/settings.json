@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ccl4.sln"
+    "dotnet.defaultSolution": "CCL4PlatesV0.4.2.sln"
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6654421947972810173}
   - component: {fileID: 8821844880045911128}
   - component: {fileID: -5072512725746152286}
+  - component: {fileID: 3228328234109077798}
   m_Layer: 3
   m_Name: Edge
   m_TagString: Untagged
@@ -51,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249955142173181764}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -123,6 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOriginal: {x: 0, y: 0, z: 0}
+  Spinning: 0
+  wobbleKillTimer: 0
 --- !u!114 &-5072512725746152286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,4 +143,22 @@ MonoBehaviour:
   SnapOffset: {x: 1.5, y: 0, z: 0}
   SnappedCoord: {x: 0, y: 0, z: 0}
   techtonicsController: {fileID: 0}
-  Tree: {fileID: 1478496334729849683, guid: d9292333100f87844a7d5f9c750025af, type: 3}
+  Territory: 
+  Tree: {fileID: 9170882793485818224, guid: d9292333100f87844a7d5f9c750025af, type: 3}
+  PlateLand: {fileID: 0}
+  PlateOcean: {fileID: 5402855006934066648, guid: 4d88a184f6ba88242874f0839f72e69e, type: 3}
+  PlateMountain: {fileID: 5402855006934066648, guid: 40e400ad0c6f41142bb5e2d780759ae8, type: 3}
+  PlateRift: {fileID: 5402855006934066648, guid: 8f814d90478571445b64a324aac71d52, type: 3}
+  PlateVolcanoe: {fileID: 5402855006934066648, guid: 3175e3bff929a3949bd4beb18beb5b49, type: 3}
+--- !u!114 &3228328234109077798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249955142173181764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593d14d4176ab9946a03cf1e70c0ea73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

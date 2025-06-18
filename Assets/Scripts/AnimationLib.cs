@@ -1,9 +1,9 @@
 using UnityEngine;
 using DG.Tweening;
 using Unity.Mathematics;
-using System.Collections;
+using Random = UnityEngine.Random;
 
-public class Animation : MonoBehaviour
+public class AnimationLib : MonoBehaviour
 {
     private Tween currentTween;
     private Vector3 scaleOriginal;
@@ -23,14 +23,10 @@ public class Animation : MonoBehaviour
             .OnComplete(() => transform.DOScale(scaleOriginal, 0.4f).SetEase(Ease.InQuint));
     }
 
-    IEnumerator Spawn(Vector3 vector, float time, float delay)
+    public void Spawn(float time)
     {
-        Vector3 endSize = transform.localScale;
-        transform.localScale = new Vector3(0, 1, 0);
-        transform.position += vector;
-        yield return new WaitForSeconds(delay);
-        transform.DOMove(transform.position - vector, time).SetEase(Ease.OutBounce);
-        transform.DOScale(endSize, time).SetEase(Ease.OutBounce);
+        transform.DOMove(positionOriginal, time).SetEase(Ease.OutBounce).SetDelay(1f);
+        transform.DOScale(scaleOriginal, time).SetEase(Ease.OutBounce).SetDelay(1f);
     }
 
     public void DoAnimation(Tween anim)
@@ -39,7 +35,7 @@ public class Animation : MonoBehaviour
         {
             currentTween.Kill();
         }
-        
+
         currentTween = anim;
     }
 
@@ -47,7 +43,7 @@ public class Animation : MonoBehaviour
     {
         return transform.DOMove(new Vector3(transform.position.x, positionOriginal.y + 0.25f, transform.position.z), 0.4f).SetEase(Ease.InOutQuint);
     }
-    
+
     public Tween HoverDeHighlight()
     {
         transform.DOScale(scaleOriginal, 0.4f);
@@ -65,5 +61,30 @@ public class Animation : MonoBehaviour
         transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
         return transform.DOScale(new Vector3(transform.localScale.x, scaleOriginal.y, transform.localScale.z), 0.2f).SetEase(Ease.OutBounce)
             .OnComplete(() => transform.DOMove(positionOriginal, 0.4f).SetEase(Ease.OutBounce));
+    }
+
+    public Tween Wobble()
+    {
+        wobbleKillTimer = 0;
+        Vector3 rand = Random.onUnitSphere * 0.025f;
+        return transform.DOScale(new Vector3(scaleOriginal.x + rand.x, scaleOriginal.y + rand.y * 8, scaleOriginal.z + +rand.z), 0.1f).SetEase(Ease.OutBounce)
+            .OnComplete(() => transform.DOScale(scaleOriginal, 0.4f).SetEase(Ease.OutBounce));
+    }
+
+    public void JumpSpin()
+    {
+        transform.DORotate(new Vector3(0, 180 + Random.Range(0,5)*90, 0), 1.5f, RotateMode.FastBeyond360)
+            .SetEase(Ease.InOutCubic);
+        transform.DOMove(new Vector3(transform.position.x, positionOriginal.y + 2, transform.position.z), 0.5f).SetEase(Ease.OutQuad) 
+        .OnComplete(() => transform.DOMove(new Vector3(transform.position.x, positionOriginal.y, transform.position.z), 1f).SetEase(Ease.OutBounce));
+    }
+
+    public float Spinning = 0;
+
+    public float wobbleKillTimer;
+    void Update()
+    {
+        wobbleKillTimer += Time.deltaTime;
+        transform.Rotate(0, Time.deltaTime * Spinning, 0);
     }
 }

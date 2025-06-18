@@ -37,7 +37,8 @@ public class Spawner : MonoBehaviour
 
     void SetUpCam()
     {
-        cam.transform.position = new Vector3(0, math.sqrt((spawnerData.Size.x * 1.5f * spawnerData.Size.x * 1.5f) + (spawnerData.Size.y * 1.5f * spawnerData.Size.y * 1.5f)) - 1, 0);
+        cam.transform.position = new Vector3(-10, math.sqrt((spawnerData.Size.x * 1.5f * spawnerData.Size.x * 1.5f) + (spawnerData.Size.y * 1.5f * spawnerData.Size.y * 1.5f)) +
+        12.5f, -10);
         cam.transform.rotation = Quaternion.Euler(45, 45, 0);
 
         cam.orthographic = true;
@@ -53,7 +54,7 @@ public class Spawner : MonoBehaviour
             for (int j = 0; j < spawnerData.Size.x; j++)
             {
                 TilePlate[i, j].GetComponent<Selector>().isSelected = false;
-                TilePlate[i, j].GetComponent<Animation>().SelectedDeHighlight();
+                TilePlate[i, j].GetComponent<AnimationLib>().SelectedDeHighlight();
             }
         }
     }

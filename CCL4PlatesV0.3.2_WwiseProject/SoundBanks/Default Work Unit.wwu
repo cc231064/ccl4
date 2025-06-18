@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E7E9536A-5884-4197-BD5B-E230D3ABA022}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{E7E9536A-5884-4197-BD5B-E230D3ABA022}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="MainMenu" ID="{BA4449FF-EB6B-482E-9152-F7F4ECD75FE2}">
-					<ObjectInclusionList>
-						<ObjectRef Name="OnClick" ID="{E0D5E85E-CCDC-4AE4-8467-80200A649057}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="SampleScene" ID="{87751A87-0DB4-4446-936C-4C03DD706CED}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Select" ID="{21AF4311-8412-46F8-B6E1-5D7C23BEE831}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Mountain" ID="{23AFDBEB-48C4-4D50-8BCF-A8B8798DC3FE}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Music" ID="{4675B2E4-94DA-4FE6-9DDA-B81CCAEB2793}">
-					<ObjectInclusionList>
-						<ObjectRef Name="BackgroundMusic" ID="{2D8AB2C0-4CD8-413E-93CC-FBDF2820F7AD}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="MenuMusic" ID="{C3E0121B-43AC-42E5-A4B0-15AB04EEBDFE}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="BackgroundMusic" ID="{EF359BD5-0145-4E33-9A23-8D824140A1C7}">
-					<ObjectInclusionList>
-						<ObjectRef Name="BackgroundMusic" ID="{2D8AB2C0-4CD8-413E-93CC-FBDF2820F7AD}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{E7E9536A-5884-4197-BD5B-E230D3ABA022}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>
