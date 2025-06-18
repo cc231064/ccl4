@@ -132,9 +132,9 @@ GameObject:
   - component: {fileID: 560570518}
   - component: {fileID: 560570517}
   - component: {fileID: 560570516}
+  - component: {fileID: 560570521}
   - component: {fileID: 560570523}
   - component: {fileID: 560570522}
-  - component: {fileID: 560570521}
   - component: {fileID: 560570524}
   m_Layer: 5
   m_Name: Canvas

@@ -18,9 +18,11 @@ public class PlateData : MonoBehaviour
     [SerializeField] GameObject PlateVolcanoe;
 
     private GameObject PlateModel;
+    private string AKEventButton = "Mountain";
 
     void Start()
     {
+        gameObject.AddComponent<AkGameObj>();
         SnappedCoord = transform.position;
         techtonicsController = GetComponent<TechtonicsController>();
 
@@ -103,6 +105,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Mountain");
                 PlateType = "Mountain";
+                AkSoundEngine.PostEvent(AKEventButton, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
