@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
     "Language": "SFX",
-    "Hash": "{BB15C2AA-E1CD-D51B-266E-ED9DCC58FF1F}",
+    "Hash": "{245C8DC2-07FF-BF4B-5D6D-03B6954858F9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
     "ShortName": "SampleScene",
     "Path": "SampleScene.bnk",
     "Media": [
+     {
+      "Id": "303000600",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "select.wav",
+      "CachePath": "33/{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem"
+     },
      {
       "Id": "720192106",
       "Language": "SFX",
@@ -38,10 +46,24 @@
         "Id": "720192106"
        }
       ]
+     },
+     {
+      "Id": "1432588725",
+      "Name": "Select",
+      "ObjectPath": "\\Events\\Default Work Unit\\Select",
+      "GUID": "{21AF4311-8412-46F8-B6E1-5D7C23BEE831}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.68",
+      "DurationMax": "0.68",
+      "MediaRefs": [
+       {
+        "Id": "303000600"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{F0AA2D30-25C2-AADD-1C28-045BAC1D48D2}"
+  "FileHash": "{AA92A20E-4031-A483-817E-C8AD1CBA1B9E}"
  }
 }

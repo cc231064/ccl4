@@ -139,6 +139,28 @@
 						<ActiveSource Name="chillout-space" ID="{D7093E36-BCA8-4FF8-A594-65159CFE5CF9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="select" ID="{6AB8ED2B-8EA5-4B89-A3DD-E4605DE69BD3}" ShortID="919465187">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="select" ID="{1896A10B-B09E-46F4-B8F7-D2EB736F00A8}">
+							<Language>SFX</Language>
+							<AudioFile>select.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="303000600"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="select" ID="{1896A10B-B09E-46F4-B8F7-D2EB736F00A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
