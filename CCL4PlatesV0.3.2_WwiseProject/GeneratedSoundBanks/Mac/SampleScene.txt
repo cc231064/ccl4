@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	513139656	Mountain			\Default Work Unit\Mountain	
+	1432588725	Select			\Default Work Unit\Select	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	303000600	select	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\33\{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem		\Actor-Mixer Hierarchy\Default Work Unit\select		120048
 	720192106	mountain	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\58\{58C2AD92-C83B-3DFF-C427-5CE477256B61}.wem		\Actor-Mixer Hierarchy\Default Work Unit\mountain		217068
 

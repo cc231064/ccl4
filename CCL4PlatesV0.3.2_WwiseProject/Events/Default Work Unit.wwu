@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Select" ID="{21AF4311-8412-46F8-B6E1-5D7C23BEE831}">
+					<ChildrenList>
+						<Action Name="" ID="{2C280D64-EBDF-4107-990C-CE1C4FA2BDA0}" ShortID="981326667">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="select" ID="{6AB8ED2B-8EA5-4B89-A3DD-E4605DE69BD3}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

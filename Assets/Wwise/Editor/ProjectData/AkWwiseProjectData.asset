@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6a53e9e784589741bd5be230d3aba022
     GuidInternal: 
-    m_lastTime: -8584515164368457684
+    m_lastTime: -8584513841620506882
     List:
     - name: BackgroundMusic
       guid: d59b35ef4501334e9a238d824140a1c7
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
     GuidInternal: 
-    m_lastTime: -8584515233255675677
+    m_lastTime: -8584513841620605951
     List:
     - name: BackgroundMusic
       guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
@@ -206,6 +206,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7
       minDuration: 0.7
+    - name: Select
+      guid: 1143af211284f846b6e15d7c23bee831
+      id: 1432588725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Select
+        ObjectType: 3
+        guid: 1143af211284f846b6e15d7c23bee831
+      Path: Events\Default Work Unit\Select
+      maxAttenuation: 0
+      maxDuration: 0.68
+      minDuration: 0.68
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -232,7 +249,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ec14e5325f24cc4f8a88ae801962d12e
     GuidInternal: 
-    m_lastTime: -8584515174021355768
+    m_lastTime: -8584514547755476528
     List:
     - name: music
       guid: 082893b906e63444a16fda3fff21a61e
