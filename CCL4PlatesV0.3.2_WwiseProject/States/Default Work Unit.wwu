@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{32E514EC-245F-4FCC-8A88-AE801962D12E}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{32E514EC-245F-4FCC-8A88-AE801962D12E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{32E514EC-245F-4FCC-8A88-AE801962D12E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="music" ID="{B9932808-E606-4434-A16F-DA3FFF21A61E}">
+					<ChildrenList>
+						<State Name="None" ID="{F7E8FBCA-F36A-4B51-A788-675DFBF00873}"/>
+						<State Name="menu" ID="{5BDD939A-BEA7-4077-9AB2-CE91AC32BEF3}"/>
+						<State Name="game" ID="{FE63071F-1C58-420D-BC55-9418B75DD78E}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="menu" ID="{5BDD939A-BEA7-4077-9AB2-CE91AC32BEF3}"/>
+							<EndState Name="game" ID="{FE63071F-1C58-420D-BC55-9418B75DD78E}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="music_01" ID="{A0E0B44E-0E66-4BF2-8777-5674F908D8B8}">
+					<ChildrenList>
+						<State Name="None" ID="{9802EA85-1ED0-4FD3-8A6E-4451935C3BB8}"/>
+						<State Name="menu" ID="{4062F91A-3644-4F49-92A3-6A368A6103A3}"/>
+						<State Name="game" ID="{230934B8-984F-4D8B-A01F-C6C166F36175}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="game" ID="{230934B8-984F-4D8B-A01F-C6C166F36175}"/>
+							<EndState Name="menu" ID="{4062F91A-3644-4F49-92A3-6A368A6103A3}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
