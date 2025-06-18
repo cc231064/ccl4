@@ -1,7 +1,0 @@
-@startuml
-class Spawner {
-    + ClearSelection() : void
-}
-MonoBehaviour <|-- Spawner
-Spawner --> "Size" Vector2
-@enduml
