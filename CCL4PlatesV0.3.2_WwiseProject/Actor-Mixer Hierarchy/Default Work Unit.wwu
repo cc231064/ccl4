@@ -161,6 +161,100 @@
 						<ActiveSource Name="select" ID="{1896A10B-B09E-46F4-B8F7-D2EB736F00A8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="fox" ID="{3CD28BC7-34EA-45D2-9AC1-EF6EFCFD168B}" ShortID="793075187">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}">
+							<Language>SFX</Language>
+							<AudioFile>fox.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="231916857"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="volcano" ID="{DDECEB74-8E58-4A13-8F62-97BBC255614C}" ShortID="156426192">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="volcano" ID="{DE384B06-17D4-4472-9336-4CA9AA2D599F}">
+							<Language>SFX</Language>
+							<AudioFile>volcano.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="714536626"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="volcano" ID="{DE384B06-17D4-4472-9336-4CA9AA2D599F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ocean" ID="{F5F122FC-CCA6-43DE-A9D9-D160EA00BC4C}" ShortID="825669278">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ocean" ID="{0BEEA432-23AF-4742-9974-671133405A3F}">
+							<Language>SFX</Language>
+							<AudioFile>ocean.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="391029775"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ocean" ID="{0BEEA432-23AF-4742-9974-671133405A3F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="waves" ID="{0AD7CAE0-35BC-4EB8-902F-A2F979F074FD}" ShortID="1055503921">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="waves" ID="{E4871E0A-A3CD-46F3-BE9E-848136655AB0}">
+							<Language>SFX</Language>
+							<AudioFile>waves.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="164888234"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{9F7ECADF-78D6-4CB4-B467-1FBC88975C9A}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="waves" ID="{E4871E0A-A3CD-46F3-BE9E-848136655AB0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

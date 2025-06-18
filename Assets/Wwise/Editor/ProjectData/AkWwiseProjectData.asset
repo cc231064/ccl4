@@ -66,8 +66,64 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6a53e9e784589741bd5be230d3aba022
     GuidInternal: 
-    m_lastTime: -8584513688388796223
-    List: []
+    m_lastTime: -8584513451688194168
+    List:
+    - name: BackgroundMusic
+      guid: d59b35ef4501334e9a238d824140a1c7
+      id: 626769978
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: BackgroundMusic
+        ObjectType: 7
+        guid: d59b35ef4501334e9a238d824140a1c7
+      Path: SoundBanks\Default Work Unit\BackgroundMusic
+    - name: MainMenu
+      guid: ff4944ba6beb2e489152f7f4ecd75fe2
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: MainMenu
+        ObjectType: 7
+        guid: ff4944ba6beb2e489152f7f4ecd75fe2
+      Path: SoundBanks\Default Work Unit\MainMenu
+    - name: Music
+      guid: e4b27546da94e64f9ddab81ccaeb2793
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: Music
+        ObjectType: 7
+        guid: e4b27546da94e64f9ddab81ccaeb2793
+      Path: SoundBanks\Default Work Unit\Music
+    - name: SampleScene
+      guid: 871a7587b40d4644936c4c03dd706ced
+      id: 3850870201
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: SampleScene
+        ObjectType: 7
+        guid: 871a7587b40d4644936c4c03dd706ced
+      Path: SoundBanks\Default Work Unit\SampleScene
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +136,127 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
     GuidInternal: 
-    m_lastTime: -8584513688388796223
-    List: []
+    m_lastTime: -8584513451688219423
+    List:
+    - name: BackgroundMusic
+      guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
+      id: 626769978
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: BackgroundMusic
+        ObjectType: 3
+        guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
+      Path: Events\Default Work Unit\BackgroundMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Fox
+      guid: daae683261d9814c89c94a3cac74cde3
+      id: 1083137540
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Fox
+        ObjectType: 3
+        guid: daae683261d9814c89c94a3cac74cde3
+      Path: Events\Default Work Unit\Fox
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: MenuMusic
+      guid: 1b12e0c3ac43e542a4b015ab04eebdfe
+      id: 679636833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: MenuMusic
+        ObjectType: 3
+        guid: 1b12e0c3ac43e542a4b015ab04eebdfe
+      Path: Events\Default Work Unit\MenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Mountain
+      guid: ebdbaf23c448504d8bcfa8b8798dc3fe
+      id: 513139656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Mountain
+        ObjectType: 3
+        guid: ebdbaf23c448504d8bcfa8b8798dc3fe
+      Path: Events\Default Work Unit\Mountain
+      maxAttenuation: 0
+      maxDuration: 1.23
+      minDuration: 1.23
+    - name: OnClick
+      guid: 5ee8d5e0dccce44a846780200a649057
+      id: 21544190
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: OnClick
+        ObjectType: 3
+        guid: 5ee8d5e0dccce44a846780200a649057
+      Path: Events\Default Work Unit\OnClick
+      maxAttenuation: 0
+      maxDuration: 0.7
+      minDuration: 0.7
+    - name: Select
+      guid: 1143af211284f846b6e15d7c23bee831
+      id: 1432588725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Select
+        ObjectType: 3
+        guid: 1143af211284f846b6e15d7c23bee831
+      Path: Events\Default Work Unit\Select
+      maxAttenuation: 0
+      maxDuration: 0.68
+      minDuration: 0.68
+    - name: Volcano
+      guid: 0552f101300f3a42ba166ff3cf6c1319
+      id: 1338354589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Volcano
+        ObjectType: 3
+        guid: 0552f101300f3a42ba166ff3cf6c1319
+      Path: Events\Default Work Unit\Volcano
+      maxAttenuation: 0
+      maxDuration: 0.70201814
+      minDuration: 0.70201814
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

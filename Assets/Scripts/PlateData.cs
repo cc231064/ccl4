@@ -18,7 +18,9 @@ public class PlateData : MonoBehaviour
     [SerializeField] GameObject PlateVolcanoe;
 
     private GameObject PlateModel;
-    private string AKEventButton = "Mountain";
+    private string AkMountain = "Mountain";
+    private string AkVolcano = "Volcano";
+    private string AkOcean = "Ocean";
 
     void Start()
     {
@@ -105,7 +107,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Mountain");
                 PlateType = "Mountain";
-                AkSoundEngine.PostEvent(AKEventButton, gameObject);
+                AkSoundEngine.PostEvent(AkMountain, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
@@ -113,6 +115,7 @@ public class PlateData : MonoBehaviour
                 Debug.Log("Become Volcanoe");
                 RemoveForest();
                 PlateType = "Volcanoe";
+                AkSoundEngine.PostEvent(AkVolcano, gameObject);
             }
         }
 
@@ -144,6 +147,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Oceanic floor");
                 PlateType = "Ocean";
+                AkSoundEngine.PostEvent(AkOcean, gameObject);
             }
         }
 
