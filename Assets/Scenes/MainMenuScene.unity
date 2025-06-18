@@ -337,7 +337,7 @@ MonoBehaviour:
   clickEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ab072996f9d8fbe4a96c5ebe3f6b4828, type: 2}
 --- !u!1 &629498261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff388cfa45cf893488ec11d5402462b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44
   useOtherObject: 0
   data:
     idInternal: 0
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff388cfa45cf893488ec11d5402462b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44
   useOtherObject: 0
   data:
     idInternal: 0
