@@ -16,13 +16,14 @@ public class PlateData : MonoBehaviour
     [SerializeField] GameObject PlateMountain;
     [SerializeField] GameObject PlateRift;
     [SerializeField] GameObject PlateVolcanoe;
+    [SerializeField] GameObject PlateIsland;
 
     private GameObject PlateModel;
-    private string AKEventButton = "Mountain";
+
+    public LayerMask flameableLayer;
 
     void Start()
     {
-        gameObject.AddComponent<AkGameObj>();
         SnappedCoord = transform.position;
         techtonicsController = GetComponent<TechtonicsController>();
 
@@ -77,7 +78,6 @@ public class PlateData : MonoBehaviour
             PlateModel = Instantiate(PlateRift, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
             RemoveForest();
-            //GenerateForest();
         }
 
         if (PlateType == "Ocean")
@@ -85,15 +85,45 @@ public class PlateData : MonoBehaviour
             PlateModel = Instantiate(PlateOcean, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
             RemoveForest();
-            //GenerateForest();
         }
+
 
         if (PlateType == "Volcanoe")
         {
             PlateModel = Instantiate(PlateVolcanoe, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
+
+            Collider[] hits = Physics.OverlapSphere(transform.position, 2, flameableLayer); Debug.Log(hits.Length);
+
+            foreach (Collider col in hits)
+            {
+                Debug.Log(col);
+                col.gameObject.GetComponent<AnimationLib>().BurnDowwn();
+            }
+
             RemoveForest();
-            //GenerateForest();
+        }
+
+        if (PlateType == "Land")
+        {
+            PlateModel = Instantiate(PlateLand, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+            GenerateForest();
+        }
+
+        if (PlateType == "Island")
+        {
+            PlateModel = Instantiate(PlateIsland, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
+        }
+
+        if (PlateType == "Deep")
+        {
+            PlateModel = Instantiate(PlateRift, transform.position + new Vector3(0,-0.15f, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel.transform.SetParent(transform);
+            RemoveForest();
         }
     }
 
@@ -105,7 +135,6 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Mountain");
                 PlateType = "Mountain";
-                AkSoundEngine.PostEvent(AKEventButton, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")

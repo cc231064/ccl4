@@ -145,11 +145,15 @@ MonoBehaviour:
   techtonicsController: {fileID: 0}
   Territory: 
   Tree: {fileID: 9170882793485818224, guid: d9292333100f87844a7d5f9c750025af, type: 3}
-  PlateLand: {fileID: 0}
+  PlateLand: {fileID: 4007643179184593208, guid: cda1c16a233511b448c9d9b988d4b371, type: 3}
   PlateOcean: {fileID: 4007643179184593208, guid: 3de822f24bb2fac44a8b8fe46f070b0f, type: 3}
   PlateMountain: {fileID: 4007643179184593208, guid: 3965dbc9f666019459c81449322085f7, type: 3}
   PlateRift: {fileID: 4007643179184593208, guid: f75298fdd8c74284c9fc98d6b91ff5f4, type: 3}
   PlateVolcanoe: {fileID: 4007643179184593208, guid: 474158105061be44c822d1cc9fc11a40, type: 3}
+  PlateIsland: {fileID: 4007643179184593208, guid: 5be08b548e585974797fb86143f576bf, type: 3}
+  flameableLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &490789873530605318
 MonoBehaviour:
   m_ObjectHideFlags: 0

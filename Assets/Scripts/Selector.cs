@@ -9,10 +9,8 @@ public class Selector : MonoBehaviour
     public bool isSelected;
     public bool isHover;
 
-    private string AkSelect = "Select";
     void Awake()
     {
-        gameObject.AddComponent<AkGameObj>();
         Animate = GetComponent<AnimationLib>();
         isSelected = false;
         isHover = false;
@@ -54,7 +52,6 @@ public class Selector : MonoBehaviour
             isSelected = true;
             Animate.DoAnimation(Animate.SelectedHighlight());
             Instantiator.GetComponent<TechtonicsController>().Selected = gameObject;
-            AkSoundEngine.PostEvent(AkSelect, gameObject);
         }
     }
 

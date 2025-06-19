@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 3f6094a6ae310940bf98205846a5f9ea
     GuidInternal: 
-    m_lastTime: -8584513749287846880
+    m_lastTime: -8584512724272925030
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 97f21894a6b3ec4c9b2363f989d06c15
     GuidInternal: 
-    m_lastTime: -8584513749288330059
+    m_lastTime: -8584512724273558317
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,64 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6a53e9e784589741bd5be230d3aba022
     GuidInternal: 
-    m_lastTime: -8584513688388796223
-    List: []
+    m_lastTime: -8584512703200174111
+    List:
+    - name: BackgroundMusic
+      guid: d59b35ef4501334e9a238d824140a1c7
+      id: 626769978
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: BackgroundMusic
+        ObjectType: 7
+        guid: d59b35ef4501334e9a238d824140a1c7
+      Path: SoundBanks\Default Work Unit\BackgroundMusic
+    - name: MainMenu
+      guid: ff4944ba6beb2e489152f7f4ecd75fe2
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: MainMenu
+        ObjectType: 7
+        guid: ff4944ba6beb2e489152f7f4ecd75fe2
+      Path: SoundBanks\Default Work Unit\MainMenu
+    - name: Music
+      guid: e4b27546da94e64f9ddab81ccaeb2793
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: Music
+        ObjectType: 7
+        guid: e4b27546da94e64f9ddab81ccaeb2793
+      Path: SoundBanks\Default Work Unit\Music
+    - name: SampleScene
+      guid: 871a7587b40d4644936c4c03dd706ced
+      id: 3850870201
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a53e9e784589741bd5be230d3aba022
+      - ElementName: SampleScene
+        ObjectType: 7
+        guid: 871a7587b40d4644936c4c03dd706ced
+      Path: SoundBanks\Default Work Unit\SampleScene
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +136,93 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
     GuidInternal: 
-    m_lastTime: -8584513688388796223
-    List: []
+    m_lastTime: -8584512703200243903
+    List:
+    - name: BackgroundMusic
+      guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
+      id: 626769978
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: BackgroundMusic
+        ObjectType: 3
+        guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
+      Path: Events\Default Work Unit\BackgroundMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MenuMusic
+      guid: 1b12e0c3ac43e542a4b015ab04eebdfe
+      id: 679636833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: MenuMusic
+        ObjectType: 3
+        guid: 1b12e0c3ac43e542a4b015ab04eebdfe
+      Path: Events\Default Work Unit\MenuMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mountain
+      guid: ebdbaf23c448504d8bcfa8b8798dc3fe
+      id: 513139656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Mountain
+        ObjectType: 3
+        guid: ebdbaf23c448504d8bcfa8b8798dc3fe
+      Path: Events\Default Work Unit\Mountain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OnClick
+      guid: 5ee8d5e0dccce44a846780200a649057
+      id: 21544190
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: OnClick
+        ObjectType: 3
+        guid: 5ee8d5e0dccce44a846780200a649057
+      Path: Events\Default Work Unit\OnClick
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Select
+      guid: 1143af211284f846b6e15d7c23bee831
+      id: 1432588725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Select
+        ObjectType: 3
+        guid: 1143af211284f846b6e15d7c23bee831
+      Path: Events\Default Work Unit\Select
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +235,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ddf30249d7316643badbaa43d6dea17a
     GuidInternal: 
-    m_lastTime: -8584513749288401243
+    m_lastTime: -8584512724273719003
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,8 +249,140 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ec14e5325f24cc4f8a88ae801962d12e
     GuidInternal: 
-    m_lastTime: -8584513688388770902
-    List: []
+    m_lastTime: -8584512722032216104
+    List:
+    - name: music
+      guid: 082893b906e63444a16fda3fff21a61e
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ec14e5325f24cc4f8a88ae801962d12e
+      - ElementName: music
+        ObjectType: 9
+        guid: 082893b906e63444a16fda3fff21a61e
+      Path: States\Default Work Unit\music
+      values:
+      - name: game
+        guid: 1f0763fe581c0d42bc559418b75dd78e
+        id: 702482391
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music
+          ObjectType: 9
+          guid: 082893b906e63444a16fda3fff21a61e
+        - ElementName: game
+          ObjectType: 8
+          guid: 1f0763fe581c0d42bc559418b75dd78e
+      - name: menu
+        guid: 9a93dd5ba7be77409ab2ce91ac32bef3
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music
+          ObjectType: 9
+          guid: 082893b906e63444a16fda3fff21a61e
+        - ElementName: menu
+          ObjectType: 8
+          guid: 9a93dd5ba7be77409ab2ce91ac32bef3
+      - name: None
+        guid: cafbe8f76af3514ba788675dfbf00873
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music
+          ObjectType: 9
+          guid: 082893b906e63444a16fda3fff21a61e
+        - ElementName: None
+          ObjectType: 8
+          guid: cafbe8f76af3514ba788675dfbf00873
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: music_01
+      guid: 4eb4e0a0660ef24b87775674f908d8b8
+      id: 1973439780
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ec14e5325f24cc4f8a88ae801962d12e
+      - ElementName: music_01
+        ObjectType: 9
+        guid: 4eb4e0a0660ef24b87775674f908d8b8
+      Path: States\Default Work Unit\music_01
+      values:
+      - name: game
+        guid: b83409234f988b4da01fc6c166f36175
+        id: 702482391
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music_01
+          ObjectType: 9
+          guid: 4eb4e0a0660ef24b87775674f908d8b8
+        - ElementName: game
+          ObjectType: 8
+          guid: b83409234f988b4da01fc6c166f36175
+      - name: menu
+        guid: 1af962404436494f92a36a368a6103a3
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music_01
+          ObjectType: 9
+          guid: 4eb4e0a0660ef24b87775674f908d8b8
+        - ElementName: menu
+          ObjectType: 8
+          guid: 1af962404436494f92a36a368a6103a3
+      - name: None
+        guid: 85ea0298d01ed34f8a6e4451935c3bb8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ec14e5325f24cc4f8a88ae801962d12e
+        - ElementName: music_01
+          ObjectType: 9
+          guid: 4eb4e0a0660ef24b87775674f908d8b8
+        - ElementName: None
+          ObjectType: 8
+          guid: 85ea0298d01ed34f8a6e4451935c3bb8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -122,7 +395,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8b2a4544725eaa4983c75bdfcc2b2a8d
     GuidInternal: 
-    m_lastTime: -8584513749287943988
+    m_lastTime: -8584512724273081975
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +409,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 5fc16e8d39f4b2469b6782b0f2e8c117
     GuidInternal: 
-    m_lastTime: -8584513749287894271
+    m_lastTime: -8584512724272925030
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000c0000000d0000000e0000001000000011000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

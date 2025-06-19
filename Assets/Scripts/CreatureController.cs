@@ -4,7 +4,8 @@ public class CreatureController : MonoBehaviour
 {
     public GameObject[,] Map;
     SpawnerData spawner;
-    [SerializeField] GameObject Fox;
+    [SerializeField] GameObject Predator;
+    [SerializeField] GameObject Prey;
     public GameObject[,] Animals;
 
     public void InitialiseCreatures()
@@ -17,9 +18,12 @@ public class CreatureController : MonoBehaviour
 
         GenerateMap();
 
-        Map[0, 0].GetComponent<PlateData>().Territory = "Fox Origin";
-        Animals[0, 0] = Instantiate(Fox, Map[0, 0].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
-        Debug.Log("Fox seeded");
+        Map[0, 0].GetComponent<PlateData>().Territory = Predator.name + "Origin";
+        Animals[0, 0] = Instantiate(Predator, Map[0, 0].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+        Debug.Log(Predator.name + " seeded");
+
+        Map[3,3].GetComponent<PlateData>().Territory = Prey.name + "Origin";
+        Animals[3,3] = Instantiate(Prey, Map[3,3].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
 
         GenerateTerritory();
     }
@@ -45,9 +49,9 @@ public class CreatureController : MonoBehaviour
         {
             for (int j = 0; j < Map.GetLength(1); j++)
             {
-                if (Map[i, j].GetComponent<PlateData>().Territory != "Fox Origin")
+                if (!Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name + "Origin"))
                 {
-                    Map[i, j].GetComponent<PlateData>().Territory = "x";
+                    Map[i, j].GetComponent<PlateData>().Territory = Map[i, j].GetComponent<PlateData>().Territory.Replace(Predator.name,"").Trim();
                 }
             }
         }
@@ -63,25 +67,25 @@ public class CreatureController : MonoBehaviour
             {
                 for (int j = 0; j < Map.GetLength(1); j++)
                 {
-                    if (Map[i, j].GetComponent<PlateData>().Territory == "Fox" || Map[i, j].GetComponent<PlateData>().Territory == "Fox Origin")
+                    if (Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
                     {
                         if (Map[i, j].GetComponent<PlateData>().PlateType == "Land")
                         {
                             if (i > 0)
                             {
-                                if (Map[i - 1, j].GetComponent<PlateData>().PlateType == "Land") if(Map[i-1, j].GetComponent<PlateData>().Territory != "Fox Origin") Map[i - 1, j].GetComponent<PlateData>().Territory = "Fox";
+                                if (Map[i - 1, j].GetComponent<PlateData>().PlateType == "Land") if(!Map[i-1, j].GetComponent<PlateData>().Territory.Contains(Predator.name)) Map[i - 1, j].GetComponent<PlateData>().Territory += " " + Predator.name;
                             }
                             if (j > 0)
                             {
-                                if (Map[i, j - 1].GetComponent<PlateData>().PlateType == "Land") if(Map[i, j-1].GetComponent<PlateData>().Territory != "Fox Origin") Map[i, j - 1].GetComponent<PlateData>().Territory = "Fox";
+                                if (Map[i, j - 1].GetComponent<PlateData>().PlateType == "Land") if(!Map[i, j-1].GetComponent<PlateData>().Territory.Contains(Predator.name)) Map[i, j - 1].GetComponent<PlateData>().Territory += " " + Predator.name;
                             }
                             if (i < Map.GetLength(0) - 1)
                             {
-                                if (Map[i + 1, j].GetComponent<PlateData>().PlateType == "Land") if(Map[i+1, j].GetComponent<PlateData>().Territory != "Fox Origin") Map[i + 1, j].GetComponent<PlateData>().Territory = "Fox";
+                                if (Map[i + 1, j].GetComponent<PlateData>().PlateType == "Land") if(!Map[i+1, j].GetComponent<PlateData>().Territory.Contains(Predator.name)) Map[i + 1, j].GetComponent<PlateData>().Territory += " " + Predator.name;
                             }
                             if (j < Map.GetLength(1) - 1)
                             {
-                                if (Map[i, j + 1].GetComponent<PlateData>().PlateType == "Land") if(Map[i, j+1].GetComponent<PlateData>().Territory != "Fox Origin") Map[i, j + 1].GetComponent<PlateData>().Territory = "Fox";
+                                if (Map[i, j + 1].GetComponent<PlateData>().PlateType == "Land") if(!Map[i, j+1].GetComponent<PlateData>().Territory.Contains(Predator.name)) Map[i, j + 1].GetComponent<PlateData>().Territory += " " + Predator.name;
                             }
                         }
                     }
@@ -98,25 +102,28 @@ public class CreatureController : MonoBehaviour
         {
             for (int j = 0; j < Map.GetLength(1); j++)
             {
-                if (Map[i, j].GetComponent<PlateData>().Territory == "Fox" || Map[i, j].GetComponent<PlateData>().Territory == "Fox Origin")
-                {
-                    Map[i, j].GetComponent<TintController>().FadeStart(new Color(1, 0.5f, 0));
-                    foreach (Transform item in Map[i, j].GetComponentsInChildren<Transform>())
-                    {
-                        Debug.Log(item.GetComponent<TintController>());
-                        if (item.GetComponent<TintController>() != null)
-                        {
-                            item.GetComponent<TintController>().FadeStart(new Color(1, 0.5f, 0));
-                        }
-                    }
-                    if (Map[i, j].GetComponent<AnimationLib>().wobbleKillTimer > 1) Map[i, j].GetComponent<AnimationLib>().DoAnimation(Map[i, j].GetComponent<AnimationLib>().Wobble());
-                }
-
                 if (Animals[i, j] != null)
                 {
                     Animals[i, j].GetComponent<Animator>().SetTrigger("trWalk");
                     Animals[i, j].GetComponent<AnimationLib>().JumpSpin();
-                    Animals[i, j].GetComponent<AnimationLib>().Spinning = 4;
+                    Animals[i, j].GetComponent<AnimationLib>().Spinning = Random.Range(-4, 8);
+                    if (Animals[i,j].name.Contains(Prey.name) && Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
+                    {
+                        Animals[i, j].GetComponentInChildren<TintController>().FadeStart(new Color(1, 0, 0));
+                    }
+                }
+
+                if (Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
+                {
+                    Map[i, j].GetComponent<TintController>().FadeStart(new Color(1, 0, 0));
+                    foreach (Transform item in Map[i, j].GetComponentsInChildren<Transform>())
+                    {
+                        if (item.GetComponent<TintController>() != null)
+                        {
+                            item.GetComponent<TintController>().FadeStart(new Color(1, 0, 0));
+                        }
+                    }
+                    if (Map[i, j].GetComponent<AnimationLib>().wobbleKillTimer > 1) Map[i, j].GetComponent<AnimationLib>().DoAnimation(Map[i, j].GetComponent<AnimationLib>().Wobble());
                 }
             }
         }

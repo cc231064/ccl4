@@ -42,7 +42,7 @@ public class TintController : MonoBehaviour
         if (rend != null)
         {
             Timer += Time.deltaTime / fadeSpeed;
-            currentColor = Color.Lerp(currentColor, targetColor*0.5f + originalColor*0.5f, Timer);
+            currentColor = Color.Lerp(currentColor, targetColor * 0.5f + originalColor * 0.5f, Timer);
             rend.material.color = currentColor;
         }
     }

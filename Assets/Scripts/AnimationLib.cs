@@ -79,6 +79,13 @@ public class AnimationLib : MonoBehaviour
         .OnComplete(() => transform.DOMove(new Vector3(transform.position.x, positionOriginal.y, transform.position.z), 1f).SetEase(Ease.OutBounce));
     }
 
+    public void BurnDowwn()
+    {
+        transform.DORotate(new Vector3(0, Random.Range(0, 360), 90), 3f).SetEase(Ease.OutBounce);
+        transform.DOScale(Vector3.zero, 0.3f).SetEase(Ease.OutQuad)
+            .OnComplete(() => Destroy(gameObject));
+    }
+
     public float Spinning = 0;
 
     public float wobbleKillTimer;

@@ -104,6 +104,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6913db782cab26a4ca95c3cef9155d15, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7630554606157974534}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6913db782cab26a4ca95c3cef9155d15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6065526868456018597}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6913db782cab26a4ca95c3cef9155d15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5866971244367929439}
   m_SourcePrefab: {fileID: 100100000, guid: 6913db782cab26a4ca95c3cef9155d15, type: 3}
 --- !u!1 &2032766498098618778 stripped
 GameObject:
@@ -174,4 +180,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOriginal: {x: 0, y: 0, z: 0}
+  Spinning: 0
   wobbleKillTimer: 0
+--- !u!114 &-6065526868456018597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032766498098618778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebfe3827d12b5a4c8843a8c00ee2e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandRange: {x: 3, y: 12}
+  Trigger: trWalk
+--- !u!114 &5866971244367929439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032766498098618778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebfe3827d12b5a4c8843a8c00ee2e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandRange: {x: 5, y: 10}
+  Trigger: trLook
