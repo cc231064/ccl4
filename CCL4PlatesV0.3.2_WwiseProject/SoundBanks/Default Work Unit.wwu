@@ -12,7 +12,10 @@
 				</SoundBank>
 				<SoundBank Name="SampleScene" ID="{87751A87-0DB4-4446-936C-4C03DD706CED}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Volcano" ID="{01F15205-0F30-423A-BA16-6FF3CF6C1319}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Select" ID="{21AF4311-8412-46F8-B6E1-5D7C23BEE831}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ocean" ID="{6F52972F-F8A3-49F8-AD1B-2285B3AE891B}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fox" ID="{3268AEDA-D961-4C81-89C9-4A3CAC74CDE3}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Mountain" ID="{23AFDBEB-48C4-4D50-8BCF-A8B8798DC3FE}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

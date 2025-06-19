@@ -21,6 +21,9 @@ public class PlateData : MonoBehaviour
     private GameObject PlateModel;
 
     public LayerMask flameableLayer;
+    private string AkMountain = "Mountain";
+    private string AkVolcano = "Volcano";
+    private string AkOcean = "Ocean";
 
     void Start()
     {
@@ -135,6 +138,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Mountain");
                 PlateType = "Mountain";
+                AkSoundEngine.PostEvent(AkMountain, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
@@ -142,6 +146,7 @@ public class PlateData : MonoBehaviour
                 Debug.Log("Become Volcanoe");
                 RemoveForest();
                 PlateType = "Volcanoe";
+                AkSoundEngine.PostEvent(AkVolcano, gameObject);
             }
         }
 
@@ -173,6 +178,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Oceanic floor");
                 PlateType = "Ocean";
+                AkSoundEngine.PostEvent(AkOcean, gameObject);
             }
         }
 

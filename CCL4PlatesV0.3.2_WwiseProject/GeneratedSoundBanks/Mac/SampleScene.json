@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
     "Language": "SFX",
-    "Hash": "{245C8DC2-07FF-BF4B-5D6D-03B6954858F9}",
+    "Hash": "{79581C4E-67B0-BF66-DB6D-D9DD96A284B0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
     "ShortName": "SampleScene",
     "Path": "SampleScene.bnk",
     "Media": [
+     {
+      "Id": "231916857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fox.wav",
+      "CachePath": "54/{5491EF89-CE66-E547-50FD-79035032EF6D}.wem"
+     },
      {
       "Id": "303000600",
       "Language": "SFX",
@@ -22,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "select.wav",
       "CachePath": "33/{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem"
+     },
+     {
+      "Id": "714536626",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "volcano.wav",
+      "CachePath": "D9/{D9B90D19-6C00-17A7-9685-B73F34E30934}.wem"
      },
      {
       "Id": "720192106",
@@ -33,6 +49,20 @@
      }
     ],
     "Events": [
+     {
+      "Id": "1083137540",
+      "Name": "Fox",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fox",
+      "GUID": "{3268AEDA-D961-4C81-89C9-4A3CAC74CDE3}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "231916857"
+       }
+      ]
+     },
      {
       "Id": "513139656",
       "Name": "Mountain",
@@ -60,10 +90,24 @@
         "Id": "303000600"
        }
       ]
+     },
+     {
+      "Id": "1338354589",
+      "Name": "Volcano",
+      "ObjectPath": "\\Events\\Default Work Unit\\Volcano",
+      "GUID": "{01F15205-0F30-423A-BA16-6FF3CF6C1319}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.70201814",
+      "DurationMax": "0.70201814",
+      "MediaRefs": [
+       {
+        "Id": "714536626"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{AA92A20E-4031-A483-817E-C8AD1CBA1B9E}"
+  "FileHash": "{305958AB-02A2-FFAE-E5B4-AC26ABE9A297}"
  }
 }

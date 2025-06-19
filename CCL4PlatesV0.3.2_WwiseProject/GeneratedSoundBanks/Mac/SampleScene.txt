@@ -1,8 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	513139656	Mountain			\Default Work Unit\Mountain	
+	1083137540	Fox			\Default Work Unit\Fox	
+	1338354589	Volcano			\Default Work Unit\Volcano	
 	1432588725	Select			\Default Work Unit\Select	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	231916857	fox	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\54\{5491EF89-CE66-E547-50FD-79035032EF6D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\fox		176496
 	303000600	select	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\33\{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem		\Actor-Mixer Hierarchy\Default Work Unit\select		120048
+	714536626	volcano	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\D9\{D9B90D19-6C00-17A7-9685-B73F34E30934}.wem		\Actor-Mixer Hierarchy\Default Work Unit\volcano		123932
 	720192106	mountain	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\58\{58C2AD92-C83B-3DFF-C427-5CE477256B61}.wem		\Actor-Mixer Hierarchy\Default Work Unit\mountain		217068
 

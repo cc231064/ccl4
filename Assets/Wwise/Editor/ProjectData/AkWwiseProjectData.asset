@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6a53e9e784589741bd5be230d3aba022
     GuidInternal: 
-    m_lastTime: -8584512703200174111
+    m_lastTime: -8584512712187338995
     List:
     - name: BackgroundMusic
       guid: d59b35ef4501334e9a238d824140a1c7
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
     GuidInternal: 
-    m_lastTime: -8584512703200243903
+    m_lastTime: -8584512712187988336
     List:
     - name: BackgroundMusic
       guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
@@ -152,6 +152,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: c0b28a2dd84c3e4193ccfbdf2820f7ad
       Path: Events\Default Work Unit\BackgroundMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fox
+      guid: daae683261d9814c89c94a3cac74cde3
+      id: 1083137540
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Fox
+        ObjectType: 3
+        guid: daae683261d9814c89c94a3cac74cde3
+      Path: Events\Default Work Unit\Fox
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -189,6 +206,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Ocean
+      guid: 2f97526fa3f8f849ad1b2285b3ae891b
+      id: 3802555985
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Ocean
+        ObjectType: 3
+        guid: 2f97526fa3f8f849ad1b2285b3ae891b
+      Path: Events\Default Work Unit\Ocean
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: OnClick
       guid: 5ee8d5e0dccce44a846780200a649057
       id: 21544190
@@ -220,6 +254,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1143af211284f846b6e15d7c23bee831
       Path: Events\Default Work Unit\Select
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Volcano
+      guid: 0552f101300f3a42ba166ff3cf6c1319
+      id: 1338354589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Volcano
+        ObjectType: 3
+        guid: 0552f101300f3a42ba166ff3cf6c1319
+      Path: Events\Default Work Unit\Volcano
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -412,7 +463,7 @@ MonoBehaviour:
     m_lastTime: -8584512724272925030
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000c0000000d0000000e0000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

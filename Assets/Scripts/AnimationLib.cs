@@ -8,6 +8,7 @@ public class AnimationLib : MonoBehaviour
     private Tween currentTween;
     private Vector3 scaleOriginal;
     public Vector3 positionOriginal;
+
     private void Awake()
     {
         scaleOriginal = transform.localScale;

@@ -8,8 +8,13 @@ public class CreatureController : MonoBehaviour
     [SerializeField] GameObject Prey;
     public GameObject[,] Animals;
 
+    private string AkFox = "Fox";
+
+
+
     public void InitialiseCreatures()
     {
+        gameObject.AddComponent<AkGameObj>();
         spawner = GetComponent<SpawnerData>();
         Map = new GameObject[(int)spawner.Size.x * 2, (int)spawner.Size.y * 2];
         Animals = new GameObject[(int)spawner.Size.x * 2, (int)spawner.Size.y * 2];

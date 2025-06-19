@@ -58,6 +58,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fox" ID="{3268AEDA-D961-4C81-89C9-4A3CAC74CDE3}">
+					<ChildrenList>
+						<Action Name="" ID="{F5C051FE-41D4-4BA7-AEC0-5D62FCBD2666}" ShortID="1015605813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fox" ID="{3CD28BC7-34EA-45D2-9AC1-EF6EFCFD168B}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Volcano" ID="{01F15205-0F30-423A-BA16-6FF3CF6C1319}">
+					<ChildrenList>
+						<Action Name="" ID="{26732128-D4EF-4C27-89C6-20635F5E01C8}" ShortID="479781841">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="volcano" ID="{DDECEB74-8E58-4A13-8F62-97BBC255614C}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ocean" ID="{6F52972F-F8A3-49F8-AD1B-2285B3AE891B}">
+					<ChildrenList>
+						<Action Name="" ID="{17F2A6A9-E0A3-40D4-8D6D-8F48BF3982C7}" ShortID="1047087620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ocean" ID="{F5F122FC-CCA6-43DE-A9D9-D160EA00BC4C}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
