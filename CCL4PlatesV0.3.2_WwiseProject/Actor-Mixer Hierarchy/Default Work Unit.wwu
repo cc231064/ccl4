@@ -161,30 +161,97 @@
 						<ActiveSource Name="select" ID="{1896A10B-B09E-46F4-B8F7-D2EB736F00A8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="fox" ID="{3CD28BC7-34EA-45D2-9AC1-EF6EFCFD168B}" ShortID="793075187">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}">
-							<Language>SFX</Language>
-							<AudioFile>fox.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="231916857"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="volcano" ID="{DDECEB74-8E58-4A13-8F62-97BBC255614C}" ShortID="156426192">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{E83D181D-0CE5-4729-AF53-D501619184C7}" ShortID="641741696">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="10"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{41463705-41E4-4502-8092-A9F100E05CA4}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
 						</Reference>
@@ -229,9 +296,96 @@
 				</Sound>
 				<Sound Name="waves" ID="{0AD7CAE0-35BC-4EB8-902F-A2F979F074FD}" ShortID="1055503921">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{9C30DCB1-CC5C-49AB-AE28-A808F5634A11}" ShortID="951365823">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="10"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{BBFB9042-B26E-47F3-853C-7BF5358B24CE}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10</XPos>
+															<YPos>-37.57809</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
 						</Reference>
@@ -255,8 +409,94 @@
 						<ActiveSource Name="waves" ID="{E4871E0A-A3CD-46F3-BE9E-848136655AB0}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="blorbo" ID="{73B016C4-1E0F-4D3B-8104-7FA81BDD0BF5}" ShortID="206651342">
+				<Sound Name="treeburning" ID="{7697B185-EC90-4768-8CA7-6CEF5E84AC9F}" ShortID="258180395">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{21B8FF01-CFE7-40DA-B915-083CA5DB06C8}" ShortID="310320449">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{60F7560E-83E8-4914-B45F-99E9E906FF90}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
 						</Reference>
@@ -265,19 +505,19 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="blorbo" ID="{3F0593E3-FFA1-4B71-B1C9-561EE06797BC}">
+						<AudioFileSource Name="treeburning" ID="{D81D983C-46BB-4CBF-8EB7-2EBC96A0F604}">
 							<Language>SFX</Language>
-							<AudioFile>blorbo.wav</AudioFile>
+							<AudioFile>treeburning.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="619612530"/>
+								<MediaID ID="964895097"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="blorbo" ID="{3F0593E3-FFA1-4B71-B1C9-561EE06797BC}" Platform="Linked"/>
+						<ActiveSource Name="treeburning" ID="{D81D983C-46BB-4CBF-8EB7-2EBC96A0F604}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="blorbo2" ID="{6C393B6E-4568-4F62-BFCB-B956ADD5C64A}" ShortID="743514339">
+				<RandomSequenceContainer Name="animals" ID="{DAC0ADD6-8412-48BF-B021-B0179522A144}" ShortID="98684022">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
@@ -287,19 +527,141 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="blorbo2" ID="{C482F064-F51F-4C13-9213-24EA621262A7}">
-							<Language>SFX</Language>
-							<AudioFile>blorbo2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="749530460"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="chicken" ID="{68679875-83A0-4D7C-8848-FC277B953AB5}" ShortID="1045340327">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chicken" ID="{8F85417A-F5C2-4AC7-853E-44DC15F89EA9}">
+									<Language>SFX</Language>
+									<AudioFile>chicken.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="389322124"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chicken" ID="{8F85417A-F5C2-4AC7-853E-44DC15F89EA9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cow" ID="{4C3D0573-1708-4EB5-8CBA-1E4458FC4E5D}" ShortID="18546727">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cow" ID="{281FF9A0-E537-4E0D-83C7-440FD5ADC980}">
+									<Language>SFX</Language>
+									<AudioFile>cow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="946366804"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cow" ID="{281FF9A0-E537-4E0D-83C7-440FD5ADC980}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="fox" ID="{3CD28BC7-34EA-45D2-9AC1-EF6EFCFD168B}" ShortID="793075187">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}">
+									<Language>SFX</Language>
+									<AudioFile>fox.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="231916857"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fox" ID="{187DB041-E6DA-432F-A335-B1C2E127D437}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="goat" ID="{0A380E05-E4F6-4645-887E-C833F5CF0AD8}" ShortID="429428598">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="goat" ID="{B8112B18-2ECD-40CA-A711-E21334F234F4}">
+									<Language>SFX</Language>
+									<AudioFile>goat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="151638272"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="goat" ID="{B8112B18-2ECD-40CA-A711-E21334F234F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sheep" ID="{1F4A8B42-37B2-429A-849A-D5306D95AF02}" ShortID="131092214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sheep" ID="{83001F0E-36DB-4C13-9B20-6C763F9B3B32}">
+									<Language>SFX</Language>
+									<AudioFile>sheep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="442235881"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sheep" ID="{83001F0E-36DB-4C13-9B20-6C763F9B3B32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="wolf" ID="{1647F55D-8E89-4E5E-9F4C-E14FC0C10DCD}" ShortID="598512552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="wolf" ID="{FBAF2791-6204-41F3-A1F5-C3E0175DE632}">
+									<Language>SFX</Language>
+									<AudioFile>wolf.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1023327581"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="wolf" ID="{FBAF2791-6204-41F3-A1F5-C3E0175DE632}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="blorbo2" ID="{C482F064-F51F-4C13-9213-24EA621262A7}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="chicken" ID="{68679875-83A0-4D7C-8848-FC277B953AB5}" ShortID="1045340327">
+				</RandomSequenceContainer>
+				<Sound Name="chicken" ID="{F385F39C-0428-4EBB-A674-5AD5245C217E}" ShortID="1061879958">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
@@ -309,7 +671,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="chicken" ID="{8F85417A-F5C2-4AC7-853E-44DC15F89EA9}">
+						<AudioFileSource Name="chicken" ID="{A5A7D1BF-DCBF-4CA6-B6F1-E55C8C90B691}">
 							<Language>SFX</Language>
 							<AudioFile>chicken.wav</AudioFile>
 							<MediaIDList>
@@ -318,10 +680,10 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="chicken" ID="{8F85417A-F5C2-4AC7-853E-44DC15F89EA9}" Platform="Linked"/>
+						<ActiveSource Name="chicken" ID="{A5A7D1BF-DCBF-4CA6-B6F1-E55C8C90B691}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="cow" ID="{4C3D0573-1708-4EB5-8CBA-1E4458FC4E5D}" ShortID="18546727">
+				<Sound Name="cow" ID="{955EE3FF-DD8E-470C-8871-5761A47314A6}" ShortID="696655550">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
@@ -331,7 +693,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="cow" ID="{281FF9A0-E537-4E0D-83C7-440FD5ADC980}">
+						<AudioFileSource Name="cow" ID="{2E5A1C5C-7BD1-4318-9E9A-ADCDA2B8C945}">
 							<Language>SFX</Language>
 							<AudioFile>cow.wav</AudioFile>
 							<MediaIDList>
@@ -340,10 +702,10 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="cow" ID="{281FF9A0-E537-4E0D-83C7-440FD5ADC980}" Platform="Linked"/>
+						<ActiveSource Name="cow" ID="{2E5A1C5C-7BD1-4318-9E9A-ADCDA2B8C945}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="goat" ID="{0A380E05-E4F6-4645-887E-C833F5CF0AD8}" ShortID="429428598">
+				<Sound Name="fox" ID="{65C44A9D-083C-40CF-8600-DA331C344C88}" ShortID="140302300">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
@@ -353,7 +715,29 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="goat" ID="{B8112B18-2ECD-40CA-A711-E21334F234F4}">
+						<AudioFileSource Name="fox" ID="{A6AD7CE7-FDDE-4182-A366-580CBC65B9D2}">
+							<Language>SFX</Language>
+							<AudioFile>fox.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="231916857"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="fox" ID="{A6AD7CE7-FDDE-4182-A366-580CBC65B9D2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="goat" ID="{9BF357F2-8475-4146-8812-53623F501E7D}" ShortID="1061330917">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="goat" ID="{B335F81E-6E07-41BA-96C8-D8C0088A3575}">
 							<Language>SFX</Language>
 							<AudioFile>goat.wav</AudioFile>
 							<MediaIDList>
@@ -362,10 +746,10 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="goat" ID="{B8112B18-2ECD-40CA-A711-E21334F234F4}" Platform="Linked"/>
+						<ActiveSource Name="goat" ID="{B335F81E-6E07-41BA-96C8-D8C0088A3575}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="sheep" ID="{1F4A8B42-37B2-429A-849A-D5306D95AF02}" ShortID="131092214">
+				<Sound Name="sheep" ID="{1B3952B1-AFC2-4236-8067-09C2BF45BE8A}" ShortID="244416398">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
@@ -375,7 +759,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="sheep" ID="{83001F0E-36DB-4C13-9B20-6C763F9B3B32}">
+						<AudioFileSource Name="sheep" ID="{E24F4068-EC46-4D7F-BD17-F245D5B0691C}">
 							<Language>SFX</Language>
 							<AudioFile>sheep.wav</AudioFile>
 							<MediaIDList>
@@ -384,7 +768,203 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="sheep" ID="{83001F0E-36DB-4C13-9B20-6C763F9B3B32}" Platform="Linked"/>
+						<ActiveSource Name="sheep" ID="{E24F4068-EC46-4D7F-BD17-F245D5B0691C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="wolf" ID="{A366DA77-B017-4D16-8090-08AA0CA847AA}" ShortID="107004002">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="wolf" ID="{BC70F1C5-B53F-41F2-9CE2-6F5961481569}">
+							<Language>SFX</Language>
+							<AudioFile>wolf.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1023327581"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="wolf" ID="{BC70F1C5-B53F-41F2-9CE2-6F5961481569}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="blorboconf" ID="{54D03D14-7911-4433-B491-F0F1019BAB86}" ShortID="731530471">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="blorboconf" ID="{2A5C4466-17EC-4B34-9E07-9C5DB446ED5E}">
+							<Language>SFX</Language>
+							<AudioFile>blorboconf.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="445010343"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="blorboconf" ID="{2A5C4466-17EC-4B34-9E07-9C5DB446ED5E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="tree" ID="{28A770FB-0CFA-4A27-861E-1E0468D65F43}" ShortID="694477333">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="tree" ID="{541AA93B-7199-4603-A6D2-FDB6D6FF5572}">
+							<Language>SFX</Language>
+							<AudioFile>tree.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="329180945"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="tree" ID="{541AA93B-7199-4603-A6D2-FDB6D6FF5572}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="blorbo" ID="{A8E72EFC-CB70-4BED-A35B-D3F1865FCE84}" ShortID="44753949">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="blorbo" ID="{611D7EE1-5AF2-4E51-94A7-BCD28E2FD3D1}">
+							<Language>SFX</Language>
+							<AudioFile>blorbo.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="619612530"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="blorbo" ID="{611D7EE1-5AF2-4E51-94A7-BCD28E2FD3D1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="lava" ID="{7335252E-3F4A-4117-886B-03267E01DFC3}" ShortID="451954667">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{E781A2B0-33E1-4496-ACEA-1C95B076942B}" ShortID="192101836">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{176E6975-BF94-44B9-8D47-87367AC0DA8D}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="lava" ID="{1B9D8546-78A9-4431-BBD0-8C8A234474C7}">
+							<Language>SFX</Language>
+							<AudioFile>lava.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="193395261"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="lava" ID="{1B9D8546-78A9-4431-BBD0-8C8A234474C7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

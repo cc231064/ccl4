@@ -8,7 +8,7 @@ public class RandAnim : MonoBehaviour
 
     void Start()
     {
-        Timer = Random.Range(RandRange.x, RandRange.y);        
+        Timer = Random.Range(0, RandRange.y);        
     }
     void Update()
     {

@@ -1,12 +1,36 @@
 Event	ID	Name			Wwise Object Path	Notes
+	282083071	Blorboconf			\Default Work Unit\Blorboconf	
 	513139656	Mountain			\Default Work Unit\Mountain	
+	540301611	Lava			\Default Work Unit\Lava	
+	567967128	Goat			\Default Work Unit\Goat	
+	796956513	Blorbo			\Default Work Unit\Blorbo	
+	949388280	Animals			\Default Work Unit\Animals	
 	1083137540	Fox			\Default Work Unit\Fox	
+	1083682102	Cow			\Default Work Unit\Cow	
 	1338354589	Volcano			\Default Work Unit\Volcano	
 	1432588725	Select			\Default Work Unit\Select	
+	2041272125	Wolf			\Default Work Unit\Wolf	
+	2453122309	Waves			\Default Work Unit\Waves	
+	2831144690	Treeburning			\Default Work Unit\Treeburning	
+	2935967122	Sheep			\Default Work Unit\Sheep	
+	3322072369	Tree			\Default Work Unit\Tree	
+	3802555985	Ocean			\Default Work Unit\Ocean	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	231916857	fox	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\54\{5491EF89-CE66-E547-50FD-79035032EF6D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\fox		176496
+	151638272	goat	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\14\{148B2C8C-8F90-B76E-81A3-EEFA693C13AC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\animals\goat		231000
+	164888234	waves	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\17\{1776FCDB-E372-E965-F7DA-B261671DAD70}.wem		\Actor-Mixer Hierarchy\Default Work Unit\waves		1940496
+	193395261	lava	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\B7\{B7E223D2-F006-3EE4-C6C2-DE4C46DF4E94}.wem		\Actor-Mixer Hierarchy\Default Work Unit\lava		705696
+	231916857	fox	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\54\{5491EF89-CE66-E547-50FD-79035032EF6D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\animals\fox		176496
 	303000600	select	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\33\{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem		\Actor-Mixer Hierarchy\Default Work Unit\select		120048
-	714536626	volcano	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\D9\{D9B90D19-6C00-17A7-9685-B73F34E30934}.wem		\Actor-Mixer Hierarchy\Default Work Unit\volcano		123932
+	329180945	tree	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\A4\{A4819F15-DDBB-3FF3-23AC-E261537AF05C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\tree		4233696
+	389322124	chicken	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\62\{628833A9-E59F-3F81-2E51-AC690713BD1C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\animals\chicken		163928
+	391029775	ocean	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\B4\{B4A7D452-70EA-52B4-00AA-134F1BFBF3F9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ocean		236472
+	442235881	sheep	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\63\{638595A8-DF3A-C9CB-2EFF-DDB5E1DEF50D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\animals\sheep		232944
+	445010343	blorboconf	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\F5\{F5973E68-D554-8B34-B9F4-751467067285}.wem		\Actor-Mixer Hierarchy\Default Work Unit\blorboconf		1058496
+	619612530	blorbo	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\AA\{AA1E9246-B880-0BFE-C463-1BCA92CC68F3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\blorbo		882096
+	714536626	volcano	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\7D\{7DEE8295-E388-7F3D-E195-4B28414CF53D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\volcano		123932
 	720192106	mountain	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\58\{58C2AD92-C83B-3DFF-C427-5CE477256B61}.wem		\Actor-Mixer Hierarchy\Default Work Unit\mountain		217068
+	946366804	cow	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\41\{4116F143-D529-C69D-0D3B-87FB13CB927E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\cow		211300
+	964895097	treeburning	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\7F\{7FE85339-ECCA-38AF-A839-46ABF31DFA8F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\treeburning		264696
+	1023327581	wolf	C:\Users\Manuela\Documents\GitHub\ccl4\CCL4PlatesV0.3.2_WwiseProject\.cache\CF\{CF1E7217-C5A3-193D-2562-01762A3BC1F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\wolf		441096
 

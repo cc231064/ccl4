@@ -4,17 +4,14 @@ public class CreatureController : MonoBehaviour
 {
     public GameObject[,] Map;
     SpawnerData spawner;
-    [SerializeField] GameObject Predator;
-    [SerializeField] GameObject Prey;
+    [SerializeField] public GameObject Predator;
+    [SerializeField] public GameObject Prey;
     public GameObject[,] Animals;
 
-    private string AkFox = "Fox";
-
-
+    [SerializeField] GameObject Warning;
 
     public void InitialiseCreatures()
     {
-        gameObject.AddComponent<AkGameObj>();
         spawner = GetComponent<SpawnerData>();
         Map = new GameObject[(int)spawner.Size.x * 2, (int)spawner.Size.y * 2];
         Animals = new GameObject[(int)spawner.Size.x * 2, (int)spawner.Size.y * 2];
@@ -27,8 +24,12 @@ public class CreatureController : MonoBehaviour
         Animals[0, 0] = Instantiate(Predator, Map[0, 0].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
         Debug.Log(Predator.name + " seeded");
 
-        Map[3,3].GetComponent<PlateData>().Territory = Prey.name + "Origin";
-        Animals[3,3] = Instantiate(Prey, Map[3,3].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+        Map[5, 0].GetComponent<PlateData>().Territory = Prey.name + "Origin";
+        Animals[5, 0] = Instantiate(Prey, Map[5, 0].transform.position * 3 + new Vector3(0, 2, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+
+        Warning = Instantiate(Warning, Map[5, 0].transform.position * 3 + new Vector3(0, 4, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+        Warning.GetComponent<lookAtCamera>().Camera = gameObject;
+        Warning.transform.SetParent(Animals[5, 0].transform);
 
         GenerateTerritory();
     }
@@ -72,7 +73,7 @@ public class CreatureController : MonoBehaviour
             {
                 for (int j = 0; j < Map.GetLength(1); j++)
                 {
-                    if (Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
+                    if (Map[i, j].GetComponent<PlateData>().Territory.Contains("fox"))
                     {
                         if (Map[i, j].GetComponent<PlateData>().PlateType == "Land")
                         {
@@ -112,9 +113,13 @@ public class CreatureController : MonoBehaviour
                     Animals[i, j].GetComponent<Animator>().SetTrigger("trWalk");
                     Animals[i, j].GetComponent<AnimationLib>().JumpSpin();
                     Animals[i, j].GetComponent<AnimationLib>().Spinning = Random.Range(-4, 8);
-                    if (Animals[i,j].name.Contains(Prey.name) && Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
+                    if (Animals[i, j].name.Contains(Prey.name) && Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
                     {
                         Animals[i, j].GetComponentInChildren<TintController>().FadeStart(new Color(1, 0, 0));
+                        Warning.GetComponent<Renderer>().enabled = true;
+                    } else
+                    {
+                        Warning.GetComponent<Renderer>().enabled = false;
                     }
                 }
 
@@ -133,6 +138,30 @@ public class CreatureController : MonoBehaviour
             }
         }
     }
+    
+    public void UpdateTerritory()
+    {
+        GenerateTerritory();
+        for (int i = 0; i < Map.GetLength(0); i++)
+        {
+            for (int j = 0; j < Map.GetLength(1); j++)
+            {
+                if (Animals[i, j] != null)
+                {
+                    Animals[i, j].GetComponent<Animator>().SetTrigger("trWalk");
+                    Animals[i, j].GetComponent<AnimationLib>().JumpSpin();
+                    Animals[i, j].GetComponent<AnimationLib>().Spinning = Random.Range(-4, 8);
+                    if (Animals[i, j].name.Contains(Prey.name) && Map[i, j].GetComponent<PlateData>().Territory.Contains(Predator.name))
+                    {
+                        Warning.GetComponent<Renderer>().enabled = true;
+                    } else
+                    {
+                        Warning.GetComponent<Renderer>().enabled = false;
+                    }
+                }
+            }
+        }
+    }
 
     public void HideTerritory()
     {
@@ -142,12 +171,12 @@ public class CreatureController : MonoBehaviour
             {
                 Map[i, j].GetComponent<TintController>().FadeEnd();
                 foreach (Transform item in Map[i, j].GetComponentsInChildren<Transform>())
+                {
+                    if (item.GetComponent<TintController>() != null)
                     {
-                        if (item.GetComponent<TintController>() != null)
-                        {
-                            item.GetComponent<TintController>().FadeEnd();
-                        }
+                        item.GetComponent<TintController>().FadeEnd();
                     }
+                }
             }
         }
     }

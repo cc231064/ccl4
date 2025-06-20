@@ -1,5 +1,4 @@
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Spawner))]
@@ -23,13 +22,18 @@ public class Controller : MonoBehaviour
 
     [SerializeField] DialogueManager dialogue;
 
+    private string AKBlorbo = "Blorbo";
+    private string AKConf = "Blorboconf";
+
     void Start()
     {
+        gameObject.AddComponent<AkGameObj>();
         spw = GetComponent<Spawner>();
         tController = spw.GetComponent<TechtonicsController>();
         timer = 0;
-        dialogue.ShowDialogue("Intro","Hello there! I'm Blorbo. [br]And this... [br]Is my world! [br][br]Why not try poking about!");
+        dialogue.ShowDialogue("Intro", "Hello there! I'm Blorbo. [br]And this... [br]Is my world! [br][br]Why not try poking about!");
         Blorbo.GetComponent<Animator>().SetTrigger("trHappy");
+        AkSoundEngine.PostEvent(AKBlorbo, gameObject);
     }
 
     void Update()
@@ -39,12 +43,12 @@ public class Controller : MonoBehaviour
             if (timer > 0.8f)
             {
                 dialogue.ShowDialogue("SelectionMade", $"Nice! You picked a tile![br]That there is {AOrAn(tController.Selected.GetComponent<PlateData>().PlateType)} " + "-plate [br][br]Push it around with AWED and see what it does!");
-
                 if (Input.GetKeyDown(LDown))
                 {
                     tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(-1, 0, 0)));
                     tController.DetermineCollide(new Vector3(-1, 0, 0));
                     timer = 0;
+                    AkSoundEngine.PostEvent(AKBlorbo, gameObject);
                 }
 
                 if (Input.GetKeyDown(RDown))
@@ -52,6 +56,7 @@ public class Controller : MonoBehaviour
                     tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(0, 0, -1)));
                     tController.DetermineCollide(new Vector3(0, 0, -1));
                     timer = 0;
+                    AkSoundEngine.PostEvent(AKBlorbo, gameObject);
                 }
 
                 if (Input.GetKeyDown(LUp))
@@ -59,6 +64,7 @@ public class Controller : MonoBehaviour
                     tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(0, 0, 1)));
                     tController.DetermineCollide(new Vector3(0, 0, 1));
                     timer = 0;
+                    AkSoundEngine.PostEvent(AKBlorbo, gameObject);
                 }
 
                 if (Input.GetKeyDown(RUp))
@@ -66,6 +72,7 @@ public class Controller : MonoBehaviour
                     tController.Selected.GetComponent<Selector>().Animate.DoAnimation(tController.Selected.GetComponent<Selector>().Animate.Crunch(new Vector3(1, 0, 0)));
                     tController.DetermineCollide(new Vector3(1, 0, 0));
                     timer = 0;
+                    AkSoundEngine.PostEvent(AKBlorbo, gameObject);
                 }
 
                 if (Input.GetKeyDown(Select))
@@ -73,6 +80,7 @@ public class Controller : MonoBehaviour
                     GetComponent<CreatureController>().ShowTerritory();
                     dialogue.ShowDialogue("Selector", "I see you found the... Thing.[br]Thing for the... \n Selector![br][br]It tells you where the predator can get to.[br]If it glows Red, then it is in hunting range...");
                     Blorbo.GetComponent<Animator>().SetTrigger("trConfused");
+                    AkSoundEngine.PostEvent(AKConf, gameObject);
                 }
                 if (Input.GetKeyUp(Select))
                 {
@@ -103,6 +111,7 @@ public class Controller : MonoBehaviour
         {
             dialogue.ShowDialogue("FailSelect", "OH!\n\nTo move techtonic plates you need to select one.[br][br]Click it first!");
             Blorbo.GetComponent<Animator>().SetTrigger("trConfused");
+            AkSoundEngine.PostEvent(AKConf, gameObject);
         }
     } 
 

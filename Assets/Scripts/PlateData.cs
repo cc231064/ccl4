@@ -17,18 +17,25 @@ public class PlateData : MonoBehaviour
     [SerializeField] GameObject PlateRift;
     [SerializeField] GameObject PlateVolcanoe;
     [SerializeField] GameObject PlateIsland;
+    private DialogueManager dialogue;
 
     private GameObject PlateModel;
 
     public LayerMask flameableLayer;
-    private string AkMountain = "Mountain";
-    private string AkVolcano = "Volcano";
-    private string AkOcean = "Ocean";
+
+    private string AKMountain = "Mountain";
+    private string AKVolcano = "Volcano";
+    private string AKOcean = "Ocean";
+    //private string AKTree = "Tree";
+    //private string AKTreeBurning = "Treeburning";
+    //private string AKWaves = "Waves";
 
     void Start()
     {
+        gameObject.AddComponent<AkGameObj>();
         SnappedCoord = transform.position;
         techtonicsController = GetComponent<TechtonicsController>();
+        dialogue = FindAnyObjectByType<DialogueManager>();
 
         UpdateSnap();
         GenerateForest();
@@ -46,6 +53,7 @@ public class PlateData : MonoBehaviour
         for (int i = 0; i < Foliage.Length; i++)
         {
             Destroy(Foliage[i]);
+            //AkSoundEngine.PostEvent(AKTreeBurning, gameObject);
         }
     }
 
@@ -73,13 +81,14 @@ public class PlateData : MonoBehaviour
             PlateModel = Instantiate(PlateMountain, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
             RemoveForest();
-            //GenerateForest();
+            //GenerateForest();  
         }
 
         if (PlateType == "Rift")
         {
             PlateModel = Instantiate(PlateRift, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
+            dialogue.ShowDialogue("Rift", "When less dense Plates collide they buckle[br]and form Mountains!");
             RemoveForest();
         }
 
@@ -88,6 +97,7 @@ public class PlateData : MonoBehaviour
             PlateModel = Instantiate(PlateOcean, transform.position, Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
             RemoveForest();
+            //AkSoundEngine.PostEvent(AKWaves, gameObject);
         }
 
 
@@ -113,6 +123,7 @@ public class PlateData : MonoBehaviour
             PlateModel.transform.SetParent(transform);
             RemoveForest();
             GenerateForest();
+        
         }
 
         if (PlateType == "Island")
@@ -132,21 +143,25 @@ public class PlateData : MonoBehaviour
 
     public void PlateConverge(GameObject inputPlate)
     {
+        dialogue.ShowDialogue("Converge", "When Plates move together we call that Converging");
+
         if (PlateType == "Land")
         {
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Mountain");
+                dialogue.ShowDialogue("Mountain", "When less dense Plates collide they buckle[br]and form Mountains!");
                 PlateType = "Mountain";
-                AkSoundEngine.PostEvent(AkMountain, gameObject);
+                AkSoundEngine.PostEvent(AKMountain, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
             {
                 Debug.Log("Become Volcanoe");
+                dialogue.ShowDialogue("SubductionVolcanoe", "When a more dense Plate,[br]-like the Ocean-[br]collides with a less dense Plate,[br]-like land-[br]the dense one goes under the lighter one and melts, bubbling up as a Volcanoe!");
                 RemoveForest();
                 PlateType = "Volcanoe";
-                AkSoundEngine.PostEvent(AkVolcano, gameObject);
+                AkSoundEngine.PostEvent(AKVolcano, gameObject);
             }
         }
 
@@ -161,6 +176,7 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
             {
                 Debug.Log("Become Oceanic Rift");
+                dialogue.ShowDialogue("Deep", "When Oceanic Plates converge they both bend down, forming Deep Ocean Trenches");
                 PlateType = "Deep";
             }
         }
@@ -170,6 +186,7 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Major Volcanic landmass");
+                dialogue.ShowDialogue("SubductionVolcanoe", "When a more dense Plate,[br]-like the Ocean-[br]collides with a less dense Plate,[br]-like land-[br]the dense one goes under the lighter one and melts, bubbling up as a Volcanoe!");
                 RemoveForest();
                 PlateType = "Volcanoe";
             }
@@ -178,7 +195,7 @@ public class PlateData : MonoBehaviour
             {
                 Debug.Log("Become Oceanic floor");
                 PlateType = "Ocean";
-                AkSoundEngine.PostEvent(AkOcean, gameObject);
+                AkSoundEngine.PostEvent(AKOcean, gameObject);
             }
         }
 
@@ -187,6 +204,7 @@ public class PlateData : MonoBehaviour
 
     public void PlateGraze(GameObject inputPlate)
     {
+        dialogue.ShowDialogue("Earthquake", "When Plates move past eachother they can get caught, and suddenly...[br]Release![br]this is an Earthquake.");
         if (PlateType == "Land")
         {
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
@@ -242,13 +260,16 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Become Rift");
+                dialogue.ShowDialogue("Rift", "When Plates Move apart they form rifts, usually they fill with rock,[br]but they can have lave sometimes.");
                 PlateType = "Rift";
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
             {
                 Debug.Log("Become Coastal island chain");
+                dialogue.ShowDialogue("DivergeChain", "When Plates part in the Ocean, the Mantle,[br]-Magma Under the surface-[br]Comes up and makes islands");
                 PlateType = "Island";
+                AkSoundEngine.PostEvent(AKOcean, gameObject);
             }
         }
 
@@ -257,12 +278,15 @@ public class PlateData : MonoBehaviour
             if (inputPlate.GetComponent<PlateData>().PlateType == "Land")
             {
                 Debug.Log("Do basically nothing");
+                AkSoundEngine.PostEvent(AKOcean, gameObject);
             }
 
             if (inputPlate.GetComponent<PlateData>().PlateType == "Ocean")
             {
                 Debug.Log("Become mid Ocean Ridge");
+                dialogue.ShowDialogue("DivergeChain", "When Plates part in the Ocean, the Mantle,[br]-Magma Under the surface-[br]Comes up and makes islands");
                 PlateType = "Island";
+                AkSoundEngine.PostEvent(AKOcean, gameObject);
             }
         }
 

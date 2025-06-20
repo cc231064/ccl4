@@ -91,6 +91,127 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Animals" ID="{EA68B3E2-40FC-41CD-9165-1E06D0449D9E}">
+					<ChildrenList>
+						<Action Name="" ID="{8B4F9467-706C-4780-ACCE-E8A190E188EA}" ShortID="920443128">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="animals" ID="{DAC0ADD6-8412-48BF-B021-B0179522A144}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blorbo" ID="{F3F3B897-3BB9-4587-8065-7E699B1FC0FE}">
+					<ChildrenList>
+						<Action Name="" ID="{092039AB-A66D-4F0D-A402-E4CD5088269C}" ShortID="787639033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blorbo" ID="{A8E72EFC-CB70-4BED-A35B-D3F1865FCE84}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tree" ID="{1EF912C3-24A3-421E-ACFB-1CC6C7C4F365}">
+					<ChildrenList>
+						<Action Name="" ID="{DA83B97B-7683-40AD-A48D-BB92CE11B324}" ShortID="522474378">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tree" ID="{28A770FB-0CFA-4A27-861E-1E0468D65F43}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Treeburning" ID="{74F426DA-5C47-43A4-AAB4-DF793FA352A0}">
+					<ChildrenList>
+						<Action Name="" ID="{E65753B2-C3B1-4427-A87A-02ED1AD31C09}" ShortID="475141293">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="treeburning" ID="{7697B185-EC90-4768-8CA7-6CEF5E84AC9F}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blorboconf" ID="{65AECC3A-3477-4872-8479-2BC9C575DC43}">
+					<ChildrenList>
+						<Action Name="" ID="{47A13964-1B42-4466-97D2-6F3FE1E71485}" ShortID="845358202">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blorboconf" ID="{54D03D14-7911-4433-B491-F0F1019BAB86}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cow" ID="{1C6580C5-2941-4914-8A03-4B5507B218DB}">
+					<ChildrenList>
+						<Action Name="" ID="{9D1FA219-D7AD-436D-ADC3-6BBB9DD713E7}" ShortID="1061550303">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cow" ID="{955EE3FF-DD8E-470C-8871-5761A47314A6}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wolf" ID="{F847DBD7-C410-4779-B4FB-E57474609AA1}">
+					<ChildrenList>
+						<Action Name="" ID="{1F5C0030-F6D9-4804-9482-3735624CCAB7}" ShortID="687937501">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wolf" ID="{A366DA77-B017-4D16-8090-08AA0CA847AA}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Goat" ID="{0B14A126-1164-460F-95D2-8EFB74D11DEB}">
+					<ChildrenList>
+						<Action Name="" ID="{AF1AB5DF-80F7-45E4-99B4-0574FCE8EF18}" ShortID="339237216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="goat" ID="{9BF357F2-8475-4146-8812-53623F501E7D}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sheep" ID="{9C86474F-9EF4-495E-9AE7-F652F4AE70F4}">
+					<ChildrenList>
+						<Action Name="" ID="{127494C9-42E0-470B-BAEC-2BF783AFBC04}" ShortID="858402717">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sheep" ID="{1B3952B1-AFC2-4236-8067-09C2BF45BE8A}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Waves" ID="{EDA300A9-FE9B-4031-BACE-4D2C73089E0A}">
+					<ChildrenList>
+						<Action Name="" ID="{3324B929-851E-4F3B-8143-BAD84567ECB7}" ShortID="176652030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="waves" ID="{0AD7CAE0-35BC-4EB8-902F-A2F979F074FD}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lava" ID="{F0F447B0-FB56-4744-981E-9CF58F7BC5B2}">
+					<ChildrenList>
+						<Action Name="" ID="{B07E4F65-A136-418E-B204-ABF1E599B303}" ShortID="433741273">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lava" ID="{7335252E-3F4A-4117-886B-03267E01DFC3}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

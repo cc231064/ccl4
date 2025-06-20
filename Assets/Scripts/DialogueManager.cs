@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
 
     [Header("Typing Settings")]
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 0.02f;
     public float ellipsisPause = 0.5f;
     public float lineBreakPause = 0.3f;
 
@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (triggeredDialogues.Contains(id))
         {
-            Debug.Log($"Dialogue with ID '{id}' already triggered.");
+            //Debug.Log($"Dialogue with ID '{id}' already triggered.");
             return;
         }
 

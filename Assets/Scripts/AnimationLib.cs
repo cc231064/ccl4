@@ -8,9 +8,10 @@ public class AnimationLib : MonoBehaviour
     private Tween currentTween;
     private Vector3 scaleOriginal;
     public Vector3 positionOriginal;
-
+     private string AKAnimals = "Animals";
     private void Awake()
     {
+        gameObject.AddComponent<AkGameObj>();
         scaleOriginal = transform.localScale;
     }
 
@@ -70,14 +71,16 @@ public class AnimationLib : MonoBehaviour
         Vector3 rand = Random.onUnitSphere * 0.025f;
         return transform.DOScale(new Vector3(scaleOriginal.x + rand.x, scaleOriginal.y + rand.y * 8, scaleOriginal.z + +rand.z), 0.1f).SetEase(Ease.OutBounce)
             .OnComplete(() => transform.DOScale(scaleOriginal, 0.4f).SetEase(Ease.OutBounce));
+            AkSoundEngine.PostEvent(AKAnimals, gameObject);
     }
 
     public void JumpSpin()
     {
-        transform.DORotate(new Vector3(0, 180 + Random.Range(0,5)*90, 0), 1.5f, RotateMode.FastBeyond360)
+        transform.DORotate(new Vector3(0, 180 + Random.Range(0, 5) * 90, 0), 1.5f, RotateMode.FastBeyond360)
             .SetEase(Ease.InOutCubic);
-        transform.DOMove(new Vector3(transform.position.x, positionOriginal.y + 2, transform.position.z), 0.5f).SetEase(Ease.OutQuad) 
+        transform.DOMove(new Vector3(transform.position.x, positionOriginal.y + 2, transform.position.z), 0.5f).SetEase(Ease.OutQuad)
         .OnComplete(() => transform.DOMove(new Vector3(transform.position.x, positionOriginal.y, transform.position.z), 1f).SetEase(Ease.OutBounce));
+        AkSoundEngine.PostEvent(AKAnimals, gameObject);
     }
 
     public void BurnDowwn()

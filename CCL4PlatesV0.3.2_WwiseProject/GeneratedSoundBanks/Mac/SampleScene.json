@@ -10,11 +10,35 @@
     "Type": "User",
     "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
     "Language": "SFX",
-    "Hash": "{79581C4E-67B0-BF66-DB6D-D9DD96A284B0}",
+    "Hash": "{AEEA482E-DA3F-4E15-913D-68EA169D9F0D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
     "ShortName": "SampleScene",
     "Path": "SampleScene.bnk",
     "Media": [
+     {
+      "Id": "151638272",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "goat.wav",
+      "CachePath": "14/{148B2C8C-8F90-B76E-81A3-EEFA693C13AC}.wem"
+     },
+     {
+      "Id": "164888234",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "waves.wav",
+      "CachePath": "17/{1776FCDB-E372-E965-F7DA-B261671DAD70}.wem"
+     },
+     {
+      "Id": "193395261",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "lava.wav",
+      "CachePath": "B7/{B7E223D2-F006-3EE4-C6C2-DE4C46DF4E94}.wem"
+     },
      {
       "Id": "231916857",
       "Language": "SFX",
@@ -32,12 +56,60 @@
       "CachePath": "33/{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem"
      },
      {
+      "Id": "329180945",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "tree.wav",
+      "CachePath": "A4/{A4819F15-DDBB-3FF3-23AC-E261537AF05C}.wem"
+     },
+     {
+      "Id": "389322124",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chicken.wav",
+      "CachePath": "62/{628833A9-E59F-3F81-2E51-AC690713BD1C}.wem"
+     },
+     {
+      "Id": "391029775",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ocean.wav",
+      "CachePath": "B4/{B4A7D452-70EA-52B4-00AA-134F1BFBF3F9}.wem"
+     },
+     {
+      "Id": "442235881",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sheep.wav",
+      "CachePath": "63/{638595A8-DF3A-C9CB-2EFF-DDB5E1DEF50D}.wem"
+     },
+     {
+      "Id": "445010343",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "blorboconf.wav",
+      "CachePath": "F5/{F5973E68-D554-8B34-B9F4-751467067285}.wem"
+     },
+     {
+      "Id": "619612530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "blorbo.wav",
+      "CachePath": "AA/{AA1E9246-B880-0BFE-C463-1BCA92CC68F3}.wem"
+     },
+     {
       "Id": "714536626",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "volcano.wav",
-      "CachePath": "D9/{D9B90D19-6C00-17A7-9685-B73F34E30934}.wem"
+      "CachePath": "7D/{7DEE8295-E388-7F3D-E195-4B28414CF53D}.wem"
      },
      {
       "Id": "720192106",
@@ -46,9 +118,104 @@
       "Location": "Memory",
       "ShortName": "mountain.wav",
       "CachePath": "58/{58C2AD92-C83B-3DFF-C427-5CE477256B61}.wem"
+     },
+     {
+      "Id": "946366804",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "cow.wav",
+      "CachePath": "41/{4116F143-D529-C69D-0D3B-87FB13CB927E}.wem"
+     },
+     {
+      "Id": "964895097",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "treeburning.wav",
+      "CachePath": "7F/{7FE85339-ECCA-38AF-A839-46ABF31DFA8F}.wem"
+     },
+     {
+      "Id": "1023327581",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "wolf.wav",
+      "CachePath": "CF/{CF1E7217-C5A3-193D-2562-01762A3BC1F5}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "949388280",
+      "Name": "Animals",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals",
+      "GUID": "{EA68B3E2-40FC-41CD-9165-1E06D0449D9E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.92875284",
+      "DurationMax": "2.5",
+      "MediaRefs": [
+       {
+        "Id": "151638272"
+       },
+       {
+        "Id": "231916857"
+       },
+       {
+        "Id": "389322124"
+       },
+       {
+        "Id": "442235881"
+       },
+       {
+        "Id": "946366804"
+       },
+       {
+        "Id": "1023327581"
+       }
+      ]
+     },
+     {
+      "Id": "796956513",
+      "Name": "Blorbo",
+      "ObjectPath": "\\Events\\Default Work Unit\\Blorbo",
+      "GUID": "{F3F3B897-3BB9-4587-8065-7E699B1FC0FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "5",
+      "DurationMax": "5",
+      "MediaRefs": [
+       {
+        "Id": "619612530"
+       }
+      ]
+     },
+     {
+      "Id": "282083071",
+      "Name": "Blorboconf",
+      "ObjectPath": "\\Events\\Default Work Unit\\Blorboconf",
+      "GUID": "{65AECC3A-3477-4872-8479-2BC9C575DC43}",
+      "DurationType": "OneShot",
+      "DurationMin": "6",
+      "DurationMax": "6",
+      "MediaRefs": [
+       {
+        "Id": "445010343"
+       }
+      ]
+     },
+     {
+      "Id": "1083682102",
+      "Name": "Cow",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cow",
+      "GUID": "{1C6580C5-2941-4914-8A03-4B5507B218DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1973016",
+      "DurationMax": "1.1973016",
+      "MediaRefs": [
+       {
+        "Id": "946366804"
+       }
+      ]
+     },
      {
       "Id": "1083137540",
       "Name": "Fox",
@@ -60,6 +227,35 @@
       "MediaRefs": [
        {
         "Id": "231916857"
+       }
+      ]
+     },
+     {
+      "Id": "567967128",
+      "Name": "Goat",
+      "ObjectPath": "\\Events\\Default Work Unit\\Goat",
+      "GUID": "{0B14A126-1164-460F-95D2-8EFB74D11DEB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3089796",
+      "DurationMax": "1.3089796",
+      "MediaRefs": [
+       {
+        "Id": "151638272"
+       }
+      ]
+     },
+     {
+      "Id": "540301611",
+      "Name": "Lava",
+      "ObjectPath": "\\Events\\Default Work Unit\\Lava",
+      "GUID": "{F0F447B0-FB56-4744-981E-9CF58F7BC5B2}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "4",
+      "DurationMax": "4",
+      "MediaRefs": [
+       {
+        "Id": "193395261"
        }
       ]
      },
@@ -78,6 +274,20 @@
       ]
      },
      {
+      "Id": "3802555985",
+      "Name": "Ocean",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ocean",
+      "GUID": "{6F52972F-F8A3-49F8-AD1B-2285B3AE891B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.34",
+      "DurationMax": "1.34",
+      "MediaRefs": [
+       {
+        "Id": "391029775"
+       }
+      ]
+     },
+     {
       "Id": "1432588725",
       "Name": "Select",
       "ObjectPath": "\\Events\\Default Work Unit\\Select",
@@ -92,22 +302,91 @@
       ]
      },
      {
+      "Id": "2935967122",
+      "Name": "Sheep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Sheep",
+      "GUID": "{9C86474F-9EF4-495E-9AE7-F652F4AE70F4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.32",
+      "DurationMax": "1.32",
+      "MediaRefs": [
+       {
+        "Id": "442235881"
+       }
+      ]
+     },
+     {
+      "Id": "3322072369",
+      "Name": "Tree",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tree",
+      "GUID": "{1EF912C3-24A3-421E-ACFB-1CC6C7C4F365}",
+      "DurationType": "OneShot",
+      "DurationMin": "24",
+      "DurationMax": "24",
+      "MediaRefs": [
+       {
+        "Id": "329180945"
+       }
+      ]
+     },
+     {
+      "Id": "2831144690",
+      "Name": "Treeburning",
+      "ObjectPath": "\\Events\\Default Work Unit\\Treeburning",
+      "GUID": "{74F426DA-5C47-43A4-AAB4-DF793FA352A0}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
+      "MediaRefs": [
+       {
+        "Id": "964895097"
+       }
+      ]
+     },
+     {
       "Id": "1338354589",
       "Name": "Volcano",
       "ObjectPath": "\\Events\\Default Work Unit\\Volcano",
       "GUID": "{01F15205-0F30-423A-BA16-6FF3CF6C1319}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.70201814",
-      "DurationMax": "0.70201814",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "714536626"
+       }
+      ]
+     },
+     {
+      "Id": "2453122309",
+      "Name": "Waves",
+      "ObjectPath": "\\Events\\Default Work Unit\\Waves",
+      "GUID": "{EDA300A9-FE9B-4031-BACE-4D2C73089E0A}",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "164888234"
+       }
+      ]
+     },
+     {
+      "Id": "2041272125",
+      "Name": "Wolf",
+      "ObjectPath": "\\Events\\Default Work Unit\\Wolf",
+      "GUID": "{F847DBD7-C410-4779-B4FB-E57474609AA1}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.5",
+      "DurationMax": "2.5",
+      "MediaRefs": [
+       {
+        "Id": "1023327581"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{305958AB-02A2-FFAE-E5B4-AC26ABE9A297}"
+  "FileHash": "{8D2A3CE9-B0E2-52CE-C545-03431E9CDAD3}"
  }
 }
