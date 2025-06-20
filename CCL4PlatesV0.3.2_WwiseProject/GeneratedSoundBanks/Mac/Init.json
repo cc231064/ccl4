@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B2651789-487F-2F86-D01F-A46329E88EC6}",
+    "Hash": "{A03AF757-9A14-8F90-81B0-72776EF88124}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -35,6 +35,24 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "282083071",
+      "Name": "BlorboConf",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\BlorboConf",
+      "GUID": "{B460E6C3-3B10-48F1-9E6C-65BA8D2DA87C}"
+     },
+     {
+      "Id": "1461004005",
+      "Name": "BlorboMad",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\BlorboMad",
+      "GUID": "{6003D808-AE34-4593-A00B-2AD4410DA066}"
+     },
+     {
+      "Id": "1545113197",
+      "Name": "BlorboVoice",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\BlorboVoice",
+      "GUID": "{DEACC6B8-CD86-4549-9FCC-221125917FC7}"
+     },
      {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
@@ -98,6 +116,6 @@
     ]
    }
   ],
-  "FileHash": "{766DC74C-92F2-E068-5F86-B41041D31CF8}"
+  "FileHash": "{6AB6C2B0-802D-EB9D-1674-58F37BD4F67E}"
  }
 }

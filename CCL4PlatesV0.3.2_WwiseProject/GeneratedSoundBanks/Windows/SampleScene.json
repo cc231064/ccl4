@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
     "Language": "SFX",
-    "Hash": "{EEA44B85-D5ED-CC28-052B-6B47B503E933}",
+    "Hash": "{F643ADC6-93E6-889C-7479-9F7F527EADFA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
     "ShortName": "SampleScene",
     "Path": "SampleScene.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "waves.wav",
       "CachePath": "17/{1776FCDB-E372-E965-F7DA-B261671DAD70}.wem"
+     },
+     {
+      "Id": "170926368",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "blorbomad.wav",
+      "CachePath": "58/{583FCC1D-8A43-5BD6-E35B-B947D7FA3E5C}.wem"
      },
      {
       "Id": "193395261",
@@ -54,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "select.wav",
       "CachePath": "33/{335000AE-1D59-E2C2-10B7-8529E1A0BB47}.wem"
+     },
+     {
+      "Id": "309018322",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "riftwater.wav",
+      "CachePath": "F0/{F0EF2624-2EFD-77C8-0C44-E85663F9777F}.wem"
      },
      {
       "Id": "329180945",
@@ -199,6 +215,20 @@
       "MediaRefs": [
        {
         "Id": "445010343"
+       }
+      ]
+     },
+     {
+      "Id": "1461004005",
+      "Name": "Blorbomad",
+      "ObjectPath": "\\Events\\Default Work Unit\\Blorbomad",
+      "GUID": "{ED764D2B-DACE-48EE-8EC0-9D0AA1487B79}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.77",
+      "DurationMax": "3.77",
+      "MediaRefs": [
+       {
+        "Id": "170926368"
        }
       ]
      },
@@ -357,6 +387,20 @@
       ]
      },
      {
+      "Id": "3552487527",
+      "Name": "WaterRift",
+      "ObjectPath": "\\Events\\Default Work Unit\\WaterRift",
+      "GUID": "{824BB734-0C68-4505-927A-8404F7EC3880}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.39",
+      "DurationMax": "2.39",
+      "MediaRefs": [
+       {
+        "Id": "309018322"
+       }
+      ]
+     },
+     {
       "Id": "2453122309",
       "Name": "Waves",
       "ObjectPath": "\\Events\\Default Work Unit\\Waves",
@@ -386,6 +430,6 @@
     ]
    }
   ],
-  "FileHash": "{B477363E-10E9-CA85-BC5B-9BB4B7FECEB0}"
+  "FileHash": "{BA0E6D1D-7C59-57EA-184E-9084D7720594}"
  }
 }

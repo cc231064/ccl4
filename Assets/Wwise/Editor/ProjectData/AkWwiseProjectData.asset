@@ -38,8 +38,59 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 97f21894a6b3ec4c9b2363f989d06c15
     GuidInternal: 
-    m_lastTime: -8584512724273558317
+    m_lastTime: -8584511701248194314
     List:
+    - name: BlorboConf
+      guid: c3e660b4103bf1489e6c65ba8d2da87c
+      id: 282083071
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97f21894a6b3ec4c9b2363f989d06c15
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: BlorboConf
+        ObjectType: 2
+        guid: c3e660b4103bf1489e6c65ba8d2da87c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BlorboConf
+    - name: BlorboMad
+      guid: 08d8036034ae9345a00b2ad4410da066
+      id: 1461004005
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97f21894a6b3ec4c9b2363f989d06c15
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: BlorboMad
+        ObjectType: 2
+        guid: 08d8036034ae9345a00b2ad4410da066
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BlorboMad
+    - name: BlorboVoice
+      guid: b8c6acde86cd49459fcc221125917fc7
+      id: 1545113197
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97f21894a6b3ec4c9b2363f989d06c15
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: BlorboVoice
+        ObjectType: 2
+        guid: b8c6acde86cd49459fcc221125917fc7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BlorboVoice
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -66,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6a53e9e784589741bd5be230d3aba022
     GuidInternal: 
-    m_lastTime: -8584512117514806838
+    m_lastTime: -8584511707760149555
     List:
     - name: BackgroundMusic
       guid: d59b35ef4501334e9a238d824140a1c7
@@ -136,7 +187,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
     GuidInternal: 
-    m_lastTime: -8584512117517924244
+    m_lastTime: -8584511703672189013
     List:
     - name: Animals
       guid: e2b368eafc40cd4191651e06d0449d9e
@@ -206,6 +257,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 6
       minDuration: 6
+    - name: Blorbomad
+      guid: 2b4d76edcedaee488ec09d0aa1487b79
+      id: 1461004005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: Blorbomad
+        ObjectType: 3
+        guid: 2b4d76edcedaee488ec09d0aa1487b79
+      Path: Events\Default Work Unit\Blorbomad
+      maxAttenuation: 0
+      maxDuration: 3.77
+      minDuration: 3.77
     - name: Cow
       guid: c580651c412914498a034b5507b218db
       id: 1083682102
@@ -427,6 +495,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.70201814
       minDuration: 0.70201814
+    - name: WaterRift
+      guid: 34b74b82680c0545927a8404f7ec3880
+      id: 3552487527
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce1c8ebcbe1a834d9e847a8ad4d3854f
+      - ElementName: WaterRift
+        ObjectType: 3
+        guid: 34b74b82680c0545927a8404f7ec3880
+      Path: Events\Default Work Unit\WaterRift
+      maxAttenuation: 0
+      maxDuration: 2.39
+      minDuration: 2.39
     - name: Waves
       guid: a900a3ed9bfe3140bace4d2c73089e0a
       id: 2453122309

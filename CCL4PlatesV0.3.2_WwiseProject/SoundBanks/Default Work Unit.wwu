@@ -16,12 +16,14 @@
 						<ObjectRef Name="Tree" ID="{1EF912C3-24A3-421E-ACFB-1CC6C7C4F365}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Volcano" ID="{01F15205-0F30-423A-BA16-6FF3CF6C1319}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Treeburning" ID="{74F426DA-5C47-43A4-AAB4-DF793FA352A0}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WaterRift" ID="{824BB734-0C68-4505-927A-8404F7EC3880}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blorbo" ID="{F3F3B897-3BB9-4587-8065-7E699B1FC0FE}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Goat" ID="{0B14A126-1164-460F-95D2-8EFB74D11DEB}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Select" ID="{21AF4311-8412-46F8-B6E1-5D7C23BEE831}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lava" ID="{F0F447B0-FB56-4744-981E-9CF58F7BC5B2}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wolf" ID="{F847DBD7-C410-4779-B4FB-E57474609AA1}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blorboconf" ID="{65AECC3A-3477-4872-8479-2BC9C575DC43}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Blorbomad" ID="{ED764D2B-DACE-48EE-8EC0-9D0AA1487B79}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cow" ID="{1C6580C5-2941-4914-8A03-4B5507B218DB}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Sheep" ID="{9C86474F-9EF4-495E-9AE7-F652F4AE70F4}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ocean" ID="{6F52972F-F8A3-49F8-AD1B-2285B3AE891B}" WorkUnitID="{BC8E1CCE-1ABE-4D83-9E84-7A8AD4D3854F}" Origin="Manual" Filter="7"/>

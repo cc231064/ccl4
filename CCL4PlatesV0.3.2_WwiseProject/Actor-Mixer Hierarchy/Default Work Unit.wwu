@@ -50,6 +50,11 @@
 				<Sound Name="ambient-space2" ID="{20EA8539-D7A0-466F-A9D2-50A951BD05F1}" ShortID="475144716">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -800,12 +805,30 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="blorboconf" ID="{54D03D14-7911-4433-B491-F0F1019BAB86}" ShortID="731530471">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+							<ObjectRef Name="BlorboConf" ID="{B460E6C3-3B10-48F1-9E6C-65BA8D2DA87C}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -844,12 +867,35 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="blorbo" ID="{A8E72EFC-CB70-4BED-A35B-D3F1865FCE84}" ShortID="44753949">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+							<ObjectRef Name="BlorboVoice" ID="{DEACC6B8-CD86-4549-9FCC-221125917FC7}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -972,6 +1018,68 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="lava" ID="{1B9D8546-78A9-4431-BBD0-8C8A234474C7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="riftwater" ID="{CD600F6D-6EE0-4D3E-B115-5B25A0A298FE}" ShortID="451606995">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="riftwater" ID="{3ED2D3F8-925B-4CD4-B30D-2E9B7BA99D06}">
+							<Language>SFX</Language>
+							<AudioFile>riftwater.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="309018322"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="riftwater" ID="{3ED2D3F8-925B-4CD4-B30D-2E9B7BA99D06}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="blorbomad" ID="{F849434C-FD3E-4485-8C4E-24078044C4B5}" ShortID="1039237038">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{03D6FAC1-B363-4BE2-A9FB-7A179C767FC0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="BlorboMad" ID="{6003D808-AE34-4593-A00B-2AD4410DA066}" WorkUnitID="{9418F297-B3A6-4CEC-9B23-63F989D06C15}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="blorbomad" ID="{369895DC-939A-4ED0-8B77-CBB3711E7D6F}">
+							<Language>SFX</Language>
+							<AudioFile>blorbomad.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="170926368"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="blorbomad" ID="{369895DC-939A-4ED0-8B77-CBB3711E7D6F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

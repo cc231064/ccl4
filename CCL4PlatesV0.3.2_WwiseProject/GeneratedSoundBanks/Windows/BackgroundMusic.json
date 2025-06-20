@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EF359BD5-0145-4E33-9A23-8D824140A1C7}",
     "Language": "SFX",
-    "Hash": "{7F3182F0-5316-8D0F-B90C-D640DAFE3A3C}",
+    "Hash": "{ABFE8FA3-063D-F3E7-E44F-0FB76CBE01B6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\BackgroundMusic",
     "ShortName": "BackgroundMusic",
     "Path": "BackgroundMusic.bnk",
@@ -40,6 +40,6 @@
     ]
    }
   ],
-  "FileHash": "{C44E7B4D-C6D1-FDF0-DF94-AD1656B7376F}"
+  "FileHash": "{F421CD5D-4139-E33D-BE6A-DCFCD4C188F7}"
  }
 }

@@ -12,6 +12,7 @@ public class WinController1 : MonoBehaviour
 
     private string AKBlorbo = "Blorbo";
     private string AKConf = "Blorboconf";
+    private string AKMad = "Blorbomad";
     void OnMouseDown()
     {
         gameObject.AddComponent<AkGameObj>();
@@ -43,6 +44,7 @@ public class WinController1 : MonoBehaviour
         {
             WinState = false;
             Response = "I think the fox wants more space.";
+            AkSoundEngine.PostEvent(AKConf, gameObject);
         }
         if (WinState)
         {
@@ -54,6 +56,7 @@ public class WinController1 : MonoBehaviour
         {
             dialogue.ShowDialogue("Try" + Tries, "Its not quite perfect...[br][br]" + Response);
             GetComponent<Animator>().SetTrigger("trAngry");
+            AkSoundEngine.PostEvent(AKMad, gameObject);
         }
     }
 }

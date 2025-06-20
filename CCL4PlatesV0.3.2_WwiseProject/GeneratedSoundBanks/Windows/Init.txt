@@ -11,6 +11,9 @@ State	ID	Name	State Group			Notes
 	2607556080	menu	music			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	282083071	BlorboConf			\Default Work Unit\Master Audio Bus\BlorboConf	
+	1461004005	BlorboMad			\Default Work Unit\Master Audio Bus\BlorboMad	
+	1545113197	BlorboVoice			\Default Work Unit\Master Audio Bus\BlorboVoice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

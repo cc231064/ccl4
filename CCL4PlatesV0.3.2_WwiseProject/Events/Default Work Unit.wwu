@@ -212,6 +212,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Blorbomad" ID="{ED764D2B-DACE-48EE-8EC0-9D0AA1487B79}">
+					<ChildrenList>
+						<Action Name="" ID="{99515E6F-981A-4D25-AE59-7367A59E44D4}" ShortID="260218893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blorbomad" ID="{F849434C-FD3E-4485-8C4E-24078044C4B5}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WaterRift" ID="{824BB734-0C68-4505-927A-8404F7EC3880}">
+					<ChildrenList>
+						<Action Name="" ID="{BF19D872-7BFE-4790-BFA4-53D6652CB425}" ShortID="949214855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="riftwater" ID="{CD600F6D-6EE0-4D3E-B115-5B25A0A298FE}" WorkUnitID="{84D557D6-94C0-4B49-812A-CD69F72D5BC7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

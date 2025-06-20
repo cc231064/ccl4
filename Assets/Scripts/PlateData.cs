@@ -26,6 +26,7 @@ public class PlateData : MonoBehaviour
     private string AKMountain = "Mountain";
     private string AKVolcano = "Volcano";
     private string AKOcean = "Ocean";
+    private string AKWaterRift = "WaterRift";
     //private string AKTree = "Tree";
     //private string AKTreeBurning = "Treeburning";
     //private string AKWaves = "Waves";
@@ -90,6 +91,7 @@ public class PlateData : MonoBehaviour
             PlateModel.transform.SetParent(transform);
             dialogue.ShowDialogue("Rift", "When less dense Plates collide they buckle[br]and form Mountains!");
             RemoveForest();
+            AkSoundEngine.PostEvent(AKWaterRift, gameObject);
         }
 
         if (PlateType == "Ocean")
@@ -135,9 +137,10 @@ public class PlateData : MonoBehaviour
 
         if (PlateType == "Deep")
         {
-            PlateModel = Instantiate(PlateRift, transform.position + new Vector3(0,-0.15f, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
+            PlateModel = Instantiate(PlateRift, transform.position + new Vector3(0, -0.15f, 0), Quaternion.LookRotation(new Vector3(0, 0, 1)));
             PlateModel.transform.SetParent(transform);
             RemoveForest();
+            AkSoundEngine.PostEvent(AKWaterRift, gameObject);
         }
     }
 

@@ -9,6 +9,50 @@
 							<ObjectRef Name="System" ID="{7D23E979-C1FE-4FD3-92F6-6B50D84EC8BC}" WorkUnitID="{F9F2B86A-2137-4CB8-91BC-FCEE1F699CE4}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="BlorboMad" ID="{6003D808-AE34-4593-A00B-2AD4410DA066}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="BlorboVoice" ID="{DEACC6B8-CD86-4549-9FCC-221125917FC7}"/>
+									<DuckingParam>
+										<Volume>-96</Volume>
+										<FadeInTime>0.300000011920929</FadeInTime>
+										<FadeOutTime>0.300000011920929</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="BlorboConf" ID="{B460E6C3-3B10-48F1-9E6C-65BA8D2DA87C}"/>
+									<DuckingParam>
+										<Volume>-96</Volume>
+										<FadeInTime>0.300000011920929</FadeInTime>
+										<FadeOutTime>0.300000011920929</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="BlorboVoice" ID="{DEACC6B8-CD86-4549-9FCC-221125917FC7}"/>
+						<Bus Name="BlorboConf" ID="{B460E6C3-3B10-48F1-9E6C-65BA8D2DA87C}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="BlorboVoice" ID="{DEACC6B8-CD86-4549-9FCC-221125917FC7}"/>
+									<DuckingParam>
+										<Volume>-96</Volume>
+										<FadeInTime>0.300000011920929</FadeInTime>
+										<FadeOutTime>0.300000011920929</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
