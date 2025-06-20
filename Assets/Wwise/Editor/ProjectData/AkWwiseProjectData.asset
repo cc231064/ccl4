@@ -272,8 +272,8 @@ MonoBehaviour:
         guid: b047f4f056fb4447981e9cf58f7bc5b2
       Path: Events\Default Work Unit\Lava
       maxAttenuation: 100
-      maxDuration: 4
-      minDuration: 4
+      maxDuration: 0
+      minDuration: 0
     - name: MenuMusic
       guid: 1b12e0c3ac43e542a4b015ab04eebdfe
       id: 679636833
@@ -424,9 +424,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0552f101300f3a42ba166ff3cf6c1319
       Path: Events\Default Work Unit\Volcano
-      maxAttenuation: 10
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: 0.70201814
+      minDuration: 0.70201814
     - name: Waves
       guid: a900a3ed9bfe3140bace4d2c73089e0a
       id: 2453122309

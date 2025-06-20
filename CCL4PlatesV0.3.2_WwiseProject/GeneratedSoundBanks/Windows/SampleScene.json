@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{87751A87-0DB4-4446-936C-4C03DD706CED}",
     "Language": "SFX",
-    "Hash": "{AEEA482E-DA3F-4E15-913D-68EA169D9F0D}",
+    "Hash": "{EEA44B85-D5ED-CC28-052B-6B47B503E933}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SampleScene",
     "ShortName": "SampleScene",
     "Path": "SampleScene.bnk",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "lava.wav",
-      "CachePath": "B7/{B7E223D2-F006-3EE4-C6C2-DE4C46DF4E94}.wem"
+      "CachePath": "18/{18A16E11-830E-743A-C20E-68CE95B8C4ED}.wem"
      },
      {
       "Id": "231916857",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "volcano.wav",
-      "CachePath": "7D/{7DEE8295-E388-7F3D-E195-4B28414CF53D}.wem"
+      "CachePath": "D9/{D9B90D19-6C00-17A7-9685-B73F34E30934}.wem"
      },
      {
       "Id": "720192106",
@@ -250,9 +250,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Lava",
       "GUID": "{F0F447B0-FB56-4744-981E-9CF58F7BC5B2}",
       "MaxAttenuation": "100",
-      "DurationType": "OneShot",
-      "DurationMin": "4",
-      "DurationMax": "4",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "193395261"
@@ -349,8 +347,9 @@
       "Name": "Volcano",
       "ObjectPath": "\\Events\\Default Work Unit\\Volcano",
       "GUID": "{01F15205-0F30-423A-BA16-6FF3CF6C1319}",
-      "MaxAttenuation": "10",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "0.70201814",
+      "DurationMax": "0.70201814",
       "MediaRefs": [
        {
         "Id": "714536626"
@@ -387,6 +386,6 @@
     ]
    }
   ],
-  "FileHash": "{5EE9387B-7613-A632-AFE5-92523F963793}"
+  "FileHash": "{B477363E-10E9-CA85-BC5B-9BB4B7FECEB0}"
  }
 }

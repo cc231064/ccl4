@@ -96,6 +96,11 @@
 				<Sound Name="chillout-space" ID="{B58CECF1-4A3C-4EC1-BE47-CF2D14BD2584}" ShortID="269847909">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -163,7 +168,8 @@
 				</Sound>
 				<Sound Name="volcano" ID="{DDECEB74-8E58-4A13-8F62-97BBC255614C}" ShortID="156426192">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -862,6 +868,7 @@
 				<Sound Name="lava" ID="{7335252E-3F4A-4117-886B-03267E01DFC3}" ShortID="451954667">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
