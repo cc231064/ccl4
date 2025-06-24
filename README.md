@@ -1,6 +1,6 @@
 Tectonic Pets
 
-Storyline: Tectonic Pets - an Isometrical puzzle game, themed about our worlds tectonic plates and their changes and affects. Help Blorbo, an intergalactic space alien cat from the future, to shape and change her little world to make the wild life happy and live in harmony. Create mountains, vulcanos, rifts and even deserts to create a balanced world for both herbivore and carnovors of Blorbos little world. 
+Storyline: Tectonic Pets - an Isometrical puzzle game, themed about our worlds tectonic plates and their changes and affects. Help Blorbo, an intergalactic space alien cat from the future, to shape and change her little world to make the wild life happy and live in harmony. Create mountains, vulcanoes, rifts and even deserts to create a balanced world for both herbivore and carnovors of Blorbos little world. 
 
 User Guideline:
 Press the Start Game Button to play our game. Click on a plate and press A, W, E, D to create a mountain, ocean, island or volcanoe. If you clicked on a plate and press the S button the animals on the screen will jump and the terretory of the aggressive animals, which includes the fox and wolf, will light up red. The goal of the game is to make sure that the not aggressive animals, chicken, cow, sheep, goats are safe from the predatory animals and that the predatory animals still have enough space for their territory.
