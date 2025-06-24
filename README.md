@@ -2,6 +2,10 @@ Tectonic Pets
 
 Storyline: Blorbo is taking care of her animals by changing tectonic plates. You are helping Blorbo in achieving her Goal by changing Biomes.   
 
+User Guideline:
+Press the Start Game Button to play our game. Click on a plate and press A, W, E, D to create a mountain, ocean, island or volcanoe. If you clicked on a plate and press the S button the animals on the screen will jump and the terretory of the aggressive animals, which includes the fox and wolf, will light up red. The goal of the game is to make sure that the not aggressive animals, chicken, cow, sheep, goats are safe from the predatory animals and that the predatory animals still have enough space for their territory.
+Over the herbavoures animals is a explanation mark If they are in the territory of the predatory animal, to update this you need to click the S button. To check If you completed all tasks to win you have to click on Blorbo, who will let you know If you won or If you have to try again.
+
 Features: The Player chooses a biome to change and creates depending on the thype of biome mountains volcanoes, islnads or coeans.
 
 System design: Blorbo will mostly fly around the tectonic plates and observe them. If there was to be a bigger change, Blorbo will fly up the screen and talk to the player to explain the changes. Depending on the changes, Blorbo will have different reactions and expressions.  
@@ -14,10 +18,6 @@ The main script that runs on Start up Is the Spawner script, that calls various 
 Each plate uses its spawned position to set its ID and place itself in the correctly scalled world position. It then instantiates the model that shows the visual for the plate. This makes it easy to then refference the plate Data (Tiles are reffered to as Plates), and change the plate model for rendering. 
 Collisions are handeled in a Controller script, and The creature Territory and animations are controlled in a Creature script. The Animations are stored in a library however, meaning every simple animated object refers to this.
 Animals also have an animation controller that calls a trigger event, which is then called in the built in Unity pipline.
-
-User Guideline:
-Press the Start Game Button to play our game. Click on a plate and press A, W, E, D to create a mountain, ocean, island or volcanoe. If you clicked on a plate and press the S button the animals on the screen will jump and the terretory of the aggressive animals, which includes the fox and wolf, will light up red. The goal of the game is to make sure that the not aggressive animals, chicken, cow, sheep, goats are safe from the predatory animals and that the predatory animals still have enough space for their territory.
-Over the herbavoures animals is a explanation mark If they are in the territory of the predatory animal, to update this you need to click the S button. To check If you completed all tasks to win you have to click on Blorbo, who will let you know If you won or If you have to try again.
 
 ![chicken](https://github.com/user-attachments/assets/3c4384c2-05a3-4efb-82d8-417109fafd26)
 ![blorbo](https://github.com/user-attachments/assets/b9b26d6b-fb17-4af9-9c73-1034d8887685)
